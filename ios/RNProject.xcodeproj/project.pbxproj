@@ -59,6 +59,8 @@
 		77531B102085DA1200854E52 /* XAppTabbarModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B0F2085DA1200854E52 /* XAppTabbarModuleManager.m */; };
 		77531B142085E9EA00854E52 /* XAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B132085E9EA00854E52 /* XAppConfig.m */; };
 		77531B4E2087215500854E52 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B4D2087215400854E52 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		77531B9F2089C4EC00854E52 /* WVJBWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B9C2089C4EC00854E52 /* WVJBWebViewManager.m */; };
+		77531BA02089C4EC00854E52 /* WVJBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B9D2089C4EC00854E52 /* WVJBWebView.m */; };
 		77A522EC20843AB900AB9BC9 /* XAppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A522EB20843AB900AB9BC9 /* XAppNavigationController.m */; };
 		77A522F02084412800AB9BC9 /* XAppRNBroadcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A522EF2084412800AB9BC9 /* XAppRNBroadcast.m */; };
 		77A522F520844C2600AB9BC9 /* XAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A522F420844C2600AB9BC9 /* XAppContext.m */; };
@@ -426,6 +428,10 @@
 		77531B132085E9EA00854E52 /* XAppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppConfig.m; sourceTree = "<group>"; };
 		77531B4C2087215400854E52 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		77531B4D2087215400854E52 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		77531B9B2089C4EC00854E52 /* WVJBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVJBWebView.h; sourceTree = "<group>"; };
+		77531B9C2089C4EC00854E52 /* WVJBWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVJBWebViewManager.m; sourceTree = "<group>"; };
+		77531B9D2089C4EC00854E52 /* WVJBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVJBWebView.m; sourceTree = "<group>"; };
+		77531B9E2089C4EC00854E52 /* WVJBWebViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVJBWebViewManager.h; sourceTree = "<group>"; };
 		77A522EA20843AB900AB9BC9 /* XAppNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppNavigationController.h; sourceTree = "<group>"; };
 		77A522EB20843AB900AB9BC9 /* XAppNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppNavigationController.m; sourceTree = "<group>"; };
 		77A522EE2084412800AB9BC9 /* XAppRNBroadcast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppRNBroadcast.h; sourceTree = "<group>"; };
@@ -727,6 +733,33 @@
 			path = TabBarModule;
 			sourceTree = "<group>";
 		};
+		77531B732089BC0100854E52 /* XAppJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				77531B9A2089C3FC00854E52 /* Interface */,
+				77531B992089C3D900854E52 /* Module */,
+			);
+			path = XAppJSBridge;
+			sourceTree = "<group>";
+		};
+		77531B992089C3D900854E52 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				77531B9B2089C4EC00854E52 /* WVJBWebView.h */,
+				77531B9D2089C4EC00854E52 /* WVJBWebView.m */,
+				77531B9E2089C4EC00854E52 /* WVJBWebViewManager.h */,
+				77531B9C2089C4EC00854E52 /* WVJBWebViewManager.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		77531B9A2089C3FC00854E52 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		77A522ED20843EEE00AB9BC9 /* RNBroadcast */ = {
 			isa = PBXGroup;
 			children = (
@@ -897,6 +930,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				77531B732089BC0100854E52 /* XAppJSBridge */,
 				77531AF92085A24300854E52 /* XAppThemeManager */,
 				77E8B755207363B3008E19C4 /* XAppModuleManager */,
 				77EAB270205F88550084C79B /* XAppContainer */,
@@ -1507,12 +1541,14 @@
 				77531AB02084BEBE00854E52 /* NSDateFormatter+Category.m in Sources */,
 				77531B142085E9EA00854E52 /* XAppConfig.m in Sources */,
 				77531B0D2085D5D800854E52 /* XAppRNHCRootViewController.m in Sources */,
+				77531BA02089C4EC00854E52 /* WVJBWebView.m in Sources */,
 				77531ABF2084BF9600854E52 /* UIDevice-Hardware.m in Sources */,
 				77531B4E2087215500854E52 /* JSONKit.m in Sources */,
 				77531AB12084BEBE00854E52 /* NSDate+Category.m in Sources */,
 				77A52334208490E100AB9BC9 /* XAppRNRootViewController.m in Sources */,
 				77C00A8B2080518200DFAAFE /* XAppModuleManager+ModuleJump.m in Sources */,
 				77531ABE2084BF9600854E52 /* UIImage+Addition.m in Sources */,
+				77531B9F2089C4EC00854E52 /* WVJBWebViewManager.m in Sources */,
 				77515BEE207F67680047F961 /* XAppPageViewModuleManager.m in Sources */,
 				77A522EC20843AB900AB9BC9 /* XAppNavigationController.m in Sources */,
 				77531ABC2084BF9600854E52 /* UIColor-Adaptive.m in Sources */,

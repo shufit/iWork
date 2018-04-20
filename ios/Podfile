@@ -8,6 +8,7 @@ def shared_first_pods
     pod 'WebViewJavascriptBridge'
     pod 'MBProgressHUD'
     pod 'Masonry'
+    pod 'WebViewJavascriptBridge'
 end
 
 def shared_second_pods
