@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "navigator": "1",
+  "useRN": "",
+  "style": {
+    "themeColor": "#fdfdfd",
+    "tabBarHeight": 51,
+    "backgroundColor": "white",
+    "default": {
+      "bgColor": "#ffffff",
+      "color": "#67708C"
+    },
+    "active": {
+      "bgColor": "#ffffff",
+      "color": "#1A2D6F"
+    }
+  },
+  "tab": [
+    {
+      "id": "PAFFHomePage",
+      "pageName": "LatticeHomeScreen",
+      "show": "true",
+      "title": "推荐",
+      "identifier": "MainPage",
+      "defaultImg": "tab_home_page_nor",
+      "selectedImg": "tab_home_page_pre",
+      "url": "/modules/html/main/bank.html"
+    },
+    {
+      "id": "PAFFHomePage",
+      "pageName": "LatticeInternalWarnScreen",
+      "show": "true",
+      "title": "预警",
+      "identifier": "PAFFFinancing",
+      "defaultImg": "tab_finance_nor",
+      "selectedImg": "tab_finance_pre",
+      "url": "/modules/html/main/bank.html"
+    },
+    {
+      "id": "PAFFHomePage",
+      "pageName": "LatticeKYEBacklogScreen",
+      "show": "true",
+      "title": "待办",
+      "identifier": "LifeService",
+      "defaultImg": "tab_task_nor",
+      "selectedImg": "tab_task_pre",
+      "url": "/modules/html/main/life.html"
+    },
+    {
+      "id": "PAFFWealthCenter",
+      "pageName": "WealthCenterScreen",
+      "needLogin": "false",
+      "identifier": "WealthCenter",
+      "show": "true",
+      "title": "我的",
+      "defaultImg": "tab_my_nor",
+      "selectedImg": "tab_my_pre",
+      "url": "/modules/html/main/PAFFAssetManagement.html"
+    }
+  ]
+}
