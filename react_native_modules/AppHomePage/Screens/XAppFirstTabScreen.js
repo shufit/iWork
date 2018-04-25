@@ -32,7 +32,16 @@ class XAppFirstTabScreen extends XAppBaseScreen {
         return(
             <View style={styles.container}>
                 <Text>第一个页面</Text>
+                <Button
+                    styles={{marginTop: 40}}
+                    title="点击下一个页面"
+                    onPress={()=>{
+                    this.push('test', {}, null);
+                }}>
+
+                </Button>
             </View>
+
         );
     }
 }

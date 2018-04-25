@@ -8,9 +8,11 @@ import {Platform, StyleSheet, Text, Button, View, Image} from "react-native";
 
 
 import AppTabScreenNavigator from './XAppTabNavigator';
-import {
-    WebView
-} from 'AppJSBridge';
+// import {
+//     WebView
+// } from 'AppJSBridge';
+
+import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
 
 const RouteConfigs = {
@@ -28,10 +30,13 @@ const RouteConfigs = {
         screen: AppTabScreenNavigator,
     },
 
-    //webViewScreen加载H5页面
-    webView: {
-        screen: WebView,
-    },
+    // //webViewScreen加载H5页面
+    // webView: {
+    //     screen: WebView,
+    // },
+    test: {
+        screen: XAppNavigationScreen,
+    }
 
 };
 
