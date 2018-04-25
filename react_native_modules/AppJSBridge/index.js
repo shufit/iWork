@@ -4,4 +4,5 @@
 
 module.exports = {
 
+    WebView:require('./Screens/WebViewScreen'),
 };

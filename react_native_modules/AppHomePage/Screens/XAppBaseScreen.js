@@ -40,7 +40,88 @@ class XAppBaseScreen extends Component {
 
     constructor(props){
         super(props);
+        let {
+            navigate,           //function: go to another screen, figures out the action it needs to take to do it
+            goBack,             //function: close active screen and move back in the stack
+            addListener,        //subscribe to updates to navigation lifecycle
+            isFocused,          //function: function that returns true if the screen is focused and false otherwise
+            setParams,          //function:  make changes to route's params
+            getParam,           //function: get a specific param with fallback
+            dispatch,           //
+            push,               //function: push will move you forward to a new route in the stack
+            pop,                //function: Take you to the previous screen in the stack. If you provide a number, "n", it will specify how many screens to take you back within the stack
+            popToTop,           //function: Call this to jump back to the top route in the stack, dismissing all other screens.
+            replace,            //function: Call this to replace the current screen with the given route, with params and sub-action
+            state,              //Object: { routeName: 'profile',key: 'main0',params: { hello: 'world' }}
+
+        } = props.navigation;
+        this.navigate = navigate || undefined;
+        this.goBack = goBack || undefined;
+        this.addListener = addListener || undefined;
+        this.isFocused = isFocused || undefined;
+        this.setParams = setParams || undefined;
+        this.getParam = getParam || undefined;
+        this.dispatch = dispatch || undefined;
+        this.push = push || undefined;
+        this.pop = pop || undefined;
+        this.popToTop = popToTop || undefined;
+        this.replace = replace || undefined;
+        this.routeState = state || undefined;
+
     }
+
+
+    //app跳转至根页面
+    popToTop() {
+
+        if (this.popToTop && (typeof this.popToTop === 'function')) {
+            this.popToTop();
+        }
+    }
+
+    //push一个新的页面
+    push(routeName:String, params:Object, action:Function) {
+
+        if (this.push && (typeof this.push === 'function')) {
+            this.push(routeName, params, action);
+        }
+    }
+
+    //替换当前的页面
+
+    replace(routeName:String, params:Object, action:Function) {
+        if (this.replace && (typeof this.replace === 'function')) {
+            this.replace(routeName, params, action);
+        }
+    }
+
+    //pop页面
+    pop(){
+        let param0 = arguments[0] ? arguments[0] : undefined;
+        if (this.pop && (typeof this.pop === 'function')) {
+            if (param0 && (typeof param0 === 'number')) {
+                this.pop(param0);
+
+            } else if (param0 == undefined) {
+                this.pop();
+            }
+        }
+
+    }
+
+
+    //获取上一个页面传入的参数
+    getParam(keyName, defaultValue) {
+        if (this.getParam && (typeof this.getParam === 'function')) {
+            this.getParam(keyName, defaultValue);
+        }
+    }
+
+
+
+
+
+
 
     render() {
         return(

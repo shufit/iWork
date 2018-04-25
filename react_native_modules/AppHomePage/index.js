@@ -4,5 +4,6 @@
 
 module.exports = {
 
-    MyApp:require('./Screens/XAppTabNavigator'),
+    MyApp:require('./Screens/XAppStackNavigator'),
+    XAppBaseScreen:require('./Screens/XAppBaseScreen'),
 };
