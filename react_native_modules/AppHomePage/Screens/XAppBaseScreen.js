@@ -14,6 +14,7 @@ import {
 
 const NormalNavigationOptions = ({navigation, navigationOptions})=>{
     let {
+        title,
         showBackTitle,          //设置是否显示返回按钮的标题
         showCloseButton,        //设置是否显示关闭按钮
         showMoreButton,         //设置是否显示右边更多按钮
@@ -23,7 +24,7 @@ const NormalNavigationOptions = ({navigation, navigationOptions})=>{
 
     } = navigation.state.params;
     return {
-        headerTitle:navigation.state.params.title,
+        headerTitle:title || '',
         headerTitleStyle:{
             fontSize:18,
             color:'black',
@@ -166,6 +167,7 @@ class XAppBaseScreen extends Component {
     *routeName:在StackNavigation中注册的页面的key
     *
     * params:{
+    *           title,                  //设置导航栏标题
     *           showBackTitle,          //设置是否显示返回按钮的标题
                 showCloseButton,        //设置是否显示关闭按钮
                 showMoreButton,         //设置是否显示右边更多按钮
