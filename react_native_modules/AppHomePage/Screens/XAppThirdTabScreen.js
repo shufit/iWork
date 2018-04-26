@@ -13,14 +13,14 @@ import {
 } from 'react-native';
 import {
     XAppBaseScreen,
-    _navigationOptions,
+    NormalNavigationOptions,
 } from './XAppBaseScreen';
 
 class XAppThirdTabScreen extends XAppBaseScreen {
-    static navigationOptions={
-        ..._navigationOptions,
+    static navigationOptions = ({ navigation, navigationOptions })=>({
+        ...navigationOptions,
         header:null,
-    };
+    });
 
 
     constructor(props){

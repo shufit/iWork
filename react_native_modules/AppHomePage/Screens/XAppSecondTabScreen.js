@@ -13,16 +13,16 @@ import {
 } from 'react-native';
 import {
     XAppBaseScreen,
-    _navigationOptions,
+    NormalNavigationOptions,
 } from './XAppBaseScreen';
 
 
 class XAppSecondTabScreen extends XAppBaseScreen {
 
-    static navigationOptions={
-        ..._navigationOptions,
+    static navigationOptions = ({ navigation, navigationOptions })=>({
+        ...navigationOptions,
         header:null,
-    };
+    });
 
 
     constructor(props){
