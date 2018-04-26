@@ -43,7 +43,7 @@ const RouteConfigs = {
 const StackNavigatorConfig = {
 
     initialRouteName:'main',
-    headerMode: 'none',
+    headerMode: 'screen',
     mode: 'card',
     navigationOptions: {
         gesturesEnabled: false,

@@ -21,13 +21,22 @@ class XAppNavigationScreen extends XAppBaseScreen {
 
     static navigationOptions = {
         ..._navigationOptions,
-        // headerBackImage:()=>{
-        //     return(<Image source={require('../Image/back.png')}/>)
-        // },
-        // headerStyle:{
-        //     backgroundColor:'#1a1a1a',
-        //
-        // }
+        headerBackImage:require('../Image/back.png'),
+        headerStyle:{
+            backgroundColor:'white',
+
+        },
+        backButtonTitle:'返回',
+        headerBackTitleStyle:{
+            color:'red',
+            fontSize:10,
+            textAlign:'center',
+        },
+        headerTintColor:'',
+        title:'二级页面',
+        headerTitleStyle:{
+            color:'black',
+        }
     }
     ;
 

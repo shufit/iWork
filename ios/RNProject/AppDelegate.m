@@ -11,6 +11,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <React/RCTLinkingManager.h>
 #import "XAppContext.h"
 #import "XAppModuleManager.h"
 #import "XAppNavigator.h"
@@ -43,6 +44,18 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  
+  /*
+   ***react-navigation框架js组件在注册路路由时设置唯⼀一的路路径path, 例例如Home2: { screen: Home2, path:’app/Home2’ };
+   在⼿手机浏览器器访问demo4://app/Home2, 弹窗选择打开, 就可以 打开demo4 app并进到Home2⻚页⾯面。
+   ***
+   */
+  return [RCTLinkingManager application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+  
 }
 
 @end
