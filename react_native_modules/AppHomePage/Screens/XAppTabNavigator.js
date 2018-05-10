@@ -138,9 +138,6 @@ const AppTabScreenNavigator = TabNavigator({
             fontSize: 12, // 文字大小
         },
         tabStyle: {},
-        style: {
-            backgroundColor: '#fff',
-        }
     },
     }
 );
