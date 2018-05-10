@@ -52,7 +52,6 @@
 		77531AF820859F6200854E52 /* XAppModuleManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77531AF720859F6200854E52 /* XAppModuleManager.bundle */; };
 		77531AFC2085A39300854E52 /* XAppThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531AFB2085A39300854E52 /* XAppThemeManager.m */; };
 		77531B012085A75700854E52 /* UIImage+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B002085A75700854E52 /* UIImage+Module.m */; };
-		77531B032085A91700854E52 /* XAppContainer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77531B022085A91700854E52 /* XAppContainer.bundle */; };
 		77531B052085CA6200854E52 /* XAPPStandardTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77531B042085CA6200854E52 /* XAPPStandardTheme.plist */; };
 		77531B072085CA7900854E52 /* XAPPCustomTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77531B062085CA7900854E52 /* XAPPCustomTheme.plist */; };
 		77531B0D2085D5D800854E52 /* XAppRNHCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B0C2085D5D800854E52 /* XAppRNHCRootViewController.m */; };
@@ -416,7 +415,6 @@
 		77531AFB2085A39300854E52 /* XAppThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppThemeManager.m; sourceTree = "<group>"; };
 		77531AFF2085A75700854E52 /* UIImage+Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Module.h"; sourceTree = "<group>"; };
 		77531B002085A75700854E52 /* UIImage+Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Module.m"; sourceTree = "<group>"; };
-		77531B022085A91700854E52 /* XAppContainer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XAppContainer.bundle; sourceTree = "<group>"; };
 		77531B042085CA6200854E52 /* XAPPStandardTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XAPPStandardTheme.plist; sourceTree = "<group>"; };
 		77531B062085CA7900854E52 /* XAPPCustomTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XAPPCustomTheme.plist; sourceTree = "<group>"; };
 		77531B0B2085D5D800854E52 /* XAppRNHCRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppRNHCRootViewController.h; sourceTree = "<group>"; };
@@ -701,7 +699,6 @@
 				77531B062085CA7900854E52 /* XAPPCustomTheme.plist */,
 				77531B042085CA6200854E52 /* XAPPStandardTheme.plist */,
 				77531AF720859F6200854E52 /* XAppModuleManager.bundle */,
-				77531B022085A91700854E52 /* XAppContainer.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1005,8 +1002,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E33435CA678874B1E625F2BF /* [CP] Embed Pods Frameworks */,
-				91A5E9AE59597ED714711DC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1065,6 +1060,10 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = Q8W79XQ3BW;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1423,7 +1422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77531B052085CA6200854E52 /* XAPPStandardTheme.plist in Resources */,
-				77531B032085A91700854E52 /* XAppContainer.bundle in Resources */,
 				77531AF820859F6200854E52 /* XAppModuleManager.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				77531B072085CA7900854E52 /* XAPPCustomTheme.plist in Resources */,
@@ -1469,13 +1467,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -1491,36 +1492,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		91A5E9AE59597ED714711DC3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNProject/Pods-RNProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E33435CA678874B1E625F2BF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNProject/Pods-RNProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1669,8 +1640,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = Q8W79XQ3BW;
 				INFOPLIST_FILE = RNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1682,7 +1656,9 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ofilm.com.iWork;
 				PRODUCT_NAME = RNProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1694,7 +1670,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q8W79XQ3BW;
 				INFOPLIST_FILE = RNProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1706,7 +1685,9 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ofilm.com.iWork;
 				PRODUCT_NAME = RNProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
