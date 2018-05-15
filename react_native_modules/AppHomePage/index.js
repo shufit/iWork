@@ -1,4 +1,8 @@
 /**
+ * @providesModule AppHomePage
+ */
+
+/**
  * Created by shixiaohui on 19/3/18.
  */
 

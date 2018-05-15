@@ -17,6 +17,15 @@ import {
     NormalNavigationOptions,
 } from './XAppBaseScreen';
 
+import {
+    Grid,
+} from 'AppTheme';
+
+const A = Grid.A;
+const a = Grid.a;
+
+
+
 class XAppFourthTabScreen extends XAppBaseScreen {
     static navigationOptions = ({ navigation, navigationOptions })=>({
         ...navigationOptions,
@@ -32,6 +41,7 @@ class XAppFourthTabScreen extends XAppBaseScreen {
         return(
             <View style={styles.container}>
                 <Text>第四个页面</Text>
+                <View style={styles.subView}/>
             </View>
         );
     }
@@ -40,6 +50,11 @@ class XAppFourthTabScreen extends XAppBaseScreen {
 const styles = StyleSheet.create({
     container:{
         flex:1,
+    },
+    subView:{
+        width: 30 * a,
+        height: 40 * a,
+        backgroundColor: "red"
     }
 });
 

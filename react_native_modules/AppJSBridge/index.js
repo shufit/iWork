@@ -1,4 +1,8 @@
 /**
+ * @providesModule AppJSBridge
+ */
+
+/**
  * Created by shixiaohui on 20/4/18.
  */
 
