@@ -15,7 +15,7 @@ import {
 import {
     XAppBaseScreen,
     NormalNavigationOptions,
-} from './XAppBaseScreen';
+} from 'AppBase';
 
 import {
     Grid,

@@ -13,6 +13,8 @@ import AppTabScreenNavigator from './XAppTabNavigator';
 //     WebView
 // } from 'AppJSBridge';
 
+import {LoginScreen} from 'AppLogin';
+
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
 
@@ -37,13 +39,19 @@ const RouteConfigs = {
     // },
     test: {
         screen: XAppNavigationScreen,
+    },
+    /*
+    *** LoginScreen登录页面
+     */
+    login: {
+        screen: LoginScreen,
     }
 
 };
 
 const StackNavigatorConfig = {
 
-    initialRouteName:'main',
+    initialRouteName:'login',
     headerMode: 'screen',
     mode: 'card',
     navigationOptions: {

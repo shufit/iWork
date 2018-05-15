@@ -21,14 +21,14 @@ const AppTabScreenNavigator = TabNavigator({
                 if (focused) {
                     return (
                         <Image
-                            source={require('../Image/tab_first_page_pre.png')}
+                            source={require('../Images/tab_first_page_pre.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
                 } else {
                     return (
                         <Image
-                            source={require('../Image/tab_first_page_nor.png')}
+                            source={require('../Images/tab_first_page_nor.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
@@ -48,14 +48,14 @@ const AppTabScreenNavigator = TabNavigator({
                 if (focused) {
                     return (
                         <Image
-                            source={require('../Image/tab_second_page_pre.png')}
+                            source={require('../Images/tab_second_page_pre.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
                 } else {
                     return (
                         <Image
-                            source={require('../Image/tab_second_page_nor.png')}
+                            source={require('../Images/tab_second_page_nor.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
@@ -76,14 +76,14 @@ const AppTabScreenNavigator = TabNavigator({
                 if (focused) {
                     return (
                         <Image
-                            source={require('../Image/tab_third_page_pre.png')}
+                            source={require('../Images/tab_third_page_pre.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
                 } else {
                     return (
                         <Image
-                            source={require('../Image/tab_third_page_nor.png')}
+                            source={require('../Images/tab_third_page_nor.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
@@ -103,14 +103,14 @@ const AppTabScreenNavigator = TabNavigator({
                 if (focused) {
                     return (
                         <Image
-                            source={require('../Image/tab_fourth_page_pre.png')}
+                            source={require('../Images/tab_fourth_page_pre.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );
                 } else {
                     return (
                         <Image
-                            source={require('../Image/tab_fourth_page_nor.png')}
+                            source={require('../Images/tab_fourth_page_nor.png')}
                             style={[styles.tabIcon, tintColor]}
                         />
                     );

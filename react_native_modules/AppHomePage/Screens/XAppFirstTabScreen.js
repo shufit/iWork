@@ -15,7 +15,7 @@ import {
     XAppBaseScreen,
     NormalNavigationOptions,
 
-} from './XAppBaseScreen';
+} from 'AppBase';
 
 class XAppFirstTabScreen extends XAppBaseScreen {
 

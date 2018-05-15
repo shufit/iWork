@@ -9,5 +9,4 @@
 module.exports = {
 
     MyApp:require('./Screens/XAppStackNavigator'),
-    XAppBaseScreen:require('./Screens/XAppBaseScreen'),
 };

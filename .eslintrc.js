@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "es6": true,
-        "node": true
+        "node": true,
+        "browser": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -9,7 +10,8 @@ module.exports = {
             "experimentalObjectRestSpread": true,
             "jsx": true
         },
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 6
     },
     "plugins": [
         "react"
@@ -31,5 +33,8 @@ module.exports = {
         //     "error",
         //     "always"
         // ]
+        "no-cond-assign": 2,//禁止在条件表达式中使用赋值语句
+        "eqeqeq": "warn",
+        "strict": "off",
     }
 };

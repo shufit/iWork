@@ -3,7 +3,7 @@
  */
 import React, {Component} from "react";
 import {Platform, StyleSheet, Text, Button, View, Image, TouchableOpacity} from "react-native";
-import {XAppBaseScreen,NormalNavigationOptions} from "../Screens/XAppBaseScreen";
+import {XAppBaseScreen,NormalNavigationOptions} from "../../AppBase/Screens/XAppBaseScreen";
 
 
 class XAppNavigationScreen extends XAppBaseScreen {
