@@ -45,7 +45,7 @@ const NormalNavigationOptions = ({navigation, navigationOptions})=>{
                 }}>
                     <View style={styles.headerLeftView}>
                         <Image
-                            source={require('../../AppHomePage/Images/back.png')}
+                            source={require('../Images/back.png')}
                             style={styles.headerBackIcon}
                         />
                         {showBackTitle ? <Text style={styles.headerBackTitle}>{'返回'}</Text> : null}
@@ -75,7 +75,7 @@ const NormalNavigationOptions = ({navigation, navigationOptions})=>{
                 }}>
                     <View style={styles.headerRightView}>
                         <Image
-                            source={require('../../AppHomePage/Images/menuicon.png')}
+                            source={require('../Images/menuicon.png')}
                             style={styles.headerRightIcon}
                             resizeMode={'contain'}
                         />

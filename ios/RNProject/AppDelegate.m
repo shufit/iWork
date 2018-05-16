@@ -16,7 +16,7 @@
 #import "XAppModuleManager.h"
 #import "XAppNavigator.h"
 
-#define RN_DEV  //RN调试开关
+//#define RN_DEV  //RN调试开关
 
 @implementation AppDelegate
 

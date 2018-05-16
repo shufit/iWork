@@ -13,7 +13,10 @@ import AppTabScreenNavigator from './XAppTabNavigator';
 //     WebView
 // } from 'AppJSBridge';
 
-import {LoginScreen} from 'AppLogin';
+import {
+    LoginScreen,
+    FindPwdScreen,
+} from 'AppLogin';
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
@@ -40,12 +43,21 @@ const RouteConfigs = {
     test: {
         screen: XAppNavigationScreen,
     },
+
+
+
+    /*********************************************AppLogin模块页面*********************************************************/
     /*
     *** LoginScreen登录页面
      */
     login: {
         screen: LoginScreen,
+    },
+    findPwd:{
+        screen: FindPwdScreen,
     }
+
+    /***********************************************************************************************************************/
 
 };
 

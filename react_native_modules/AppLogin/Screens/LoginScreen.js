@@ -23,12 +23,17 @@ import {
 import {
     XAppBaseScreen,
     NormalNavigationOptions,
+    httpGet,
 } from 'AppBase';
 
+import {
+    Loading,
+    HUD,
+} from 'react-native-global-ui'
 
 const {A, a} = Grid;
 
-class LoginScreen extends Component {
+class LoginScreen extends XAppBaseScreen {
 
     static navigationOptions = ({ navigation, navigationOptions }) => ({
         ...navigationOptions,
@@ -108,7 +113,6 @@ class LoginScreen extends Component {
 
                     </View>
 
-
                 </ImageBackground>
             </View>
         );
@@ -120,6 +124,19 @@ class LoginScreen extends Component {
      */
     _loginAction() {
 
+        //登录成功后替换成首页
+        httpGet('https://api.douban.com/v2/movie/top250?start=0&count=20', {
+        }, {
+            'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJVLTliZGJhNjBjMjZiMDQwZGJiMTMwYWRhYWVlN2FkYTg2IiwiZXhwaXJhdGlvblRpbWUiOjE0NzUxMTg4ODU4NTd9.ImbjXRFYDNYFPtK2_Q2jffb2rc5DhTZSZopHG_DAuNU'
+        })
+            .then((response)=>{
+
+            })
+            .catch((err)=>{
+
+            });
+        // this.replace('main', {}, null);
+
     }
 
     /*
@@ -127,6 +144,14 @@ class LoginScreen extends Component {
      */
 
     _findPwdAction() {
+
+        this.push('findPwd', {
+            title:'找回密码',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        }, null);
 
     }
 
@@ -212,7 +237,7 @@ const styles = StyleSheet.create({
 
 });
 
-export {LoginScreen};
+export default LoginScreen;
 
 
 
