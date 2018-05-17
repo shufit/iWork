@@ -186,6 +186,14 @@ class FindPwdScreen extends XAppBaseScreen {
 
     _gotoNextAction() {
         //进行下一步操作
+
+        this.push('resetPwd', {
+            title:'找回密码',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        }, null);
     }
 
 

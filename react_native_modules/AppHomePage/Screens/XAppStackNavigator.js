@@ -16,6 +16,7 @@ import AppTabScreenNavigator from './XAppTabNavigator';
 import {
     LoginScreen,
     FindPwdScreen,
+    ResetPwdScreen,
 } from 'AppLogin';
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
@@ -55,6 +56,9 @@ const RouteConfigs = {
     },
     findPwd:{
         screen: FindPwdScreen,
+    },
+    resetPwd:{
+       screen: ResetPwdScreen,
     }
 
     /***********************************************************************************************************************/

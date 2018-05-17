@@ -1,0 +1,4 @@
+#Thu May 17 11:42:09 CST 2018
+base.0=/Users/shixiaohui/Desktop/iWork/android/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex
