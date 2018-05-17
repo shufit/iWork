@@ -68,6 +68,11 @@ class LoginScreen extends XAppBaseScreen {
                        source={require('../Images/login_background_img.png')}
                        resizeMode={'cover'}
                 >
+                    <Image
+                        style={styles.iconTitle}
+                        source={require('../Images/icon_title.png')}
+                        resizeMode={'stretch'}
+                    />
                     <View style={styles.inputContainerView}>
                         <Text style={styles.labelText}>{'用户名'}</Text>
                         <View style={styles.verticalLine}/>
@@ -127,17 +132,17 @@ class LoginScreen extends XAppBaseScreen {
     _loginAction() {
 
         //登录成功后替换成首页
-        httpGet('https://api.douban.com/v2/movie/top250?start=0&count=20', {
-        }, {
-            'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJVLTliZGJhNjBjMjZiMDQwZGJiMTMwYWRhYWVlN2FkYTg2IiwiZXhwaXJhdGlvblRpbWUiOjE0NzUxMTg4ODU4NTd9.ImbjXRFYDNYFPtK2_Q2jffb2rc5DhTZSZopHG_DAuNU'
-        })
-            .then((response)=>{
-
-            })
-            .catch((err)=>{
-
-            });
-        // this.replace('main', {}, null);
+        // httpGet('https://api.douban.com/v2/movie/top250?start=0&count=20', {
+        // }, {
+        //     'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJVLTliZGJhNjBjMjZiMDQwZGJiMTMwYWRhYWVlN2FkYTg2IiwiZXhwaXJhdGlvblRpbWUiOjE0NzUxMTg4ODU4NTd9.ImbjXRFYDNYFPtK2_Q2jffb2rc5DhTZSZopHG_DAuNU'
+        // })
+        //     .then((response)=>{
+        //
+        //     })
+        //     .catch((err)=>{
+        //
+        //     });
+        this.replace('main', {}, null);
 
     }
 
@@ -171,6 +176,10 @@ const styles = StyleSheet.create({
         flexDirection:'column',
         alignItems:'center',
         paddingTop: 20 * a,
+    },
+    iconTitle: {
+        width:45 * a,
+        height:6 * a,
     },
     inputContainerView:{
         width:45 * a,

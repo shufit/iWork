@@ -4,15 +4,23 @@
 import {TabNavigator} from "react-navigation";
 import React, {Component} from "react";
 import {Platform, StyleSheet, Text, Button, View, Image} from "react-native";
-import XAppFirstTabScreen from "./XAppFirstTabScreen"; //tab第一个页面
-import XAppSecondTabScreen from "./XAppSecondTabScreen"; //tab第二个页面
-import XAppThirdTabScreen from "./XAppThirdTabScreen"; //tab第三个页面
-import XAppFourthTabScreen from "./XAppFourthTabScreen"; //tab第四个页面
+
+
+// import XAppFirstTabScreen from "./XAppFirstTabScreen"; //tab第一个页面
+// import XAppSecondTabScreen from "./XAppSecondTabScreen"; //tab第二个页面
+// import XAppThirdTabScreen from "./XAppThirdTabScreen"; //tab第三个页面
+// import XAppFourthTabScreen from "./XAppFourthTabScreen"; //tab第四个页面
+
+import OfilmHomeTabScreen from './OfilmScreens/OfilmHomeTabScreen';
+import OfilmWorkStationTabScreen from './OfilmScreens/OfilmWorkStationTabScreen';
+import OfilmPortalTabScreen from './OfilmScreens/OfilmPortalTabScreen';
+import OfilmMeTabScreen from './OfilmScreens/OfilmMeTabScreen';
+
 
 const AppTabScreenNavigator = TabNavigator({
 
     tabPageOne:{
-        screen:XAppFirstTabScreen,
+        screen:OfilmHomeTabScreen,
         navigationOptions:{
             title:'首页',
             tabBarVisible:true,
@@ -39,7 +47,7 @@ const AppTabScreenNavigator = TabNavigator({
         }
     },
     tabPageTwo:{
-        screen:XAppSecondTabScreen,
+        screen:OfilmWorkStationTabScreen,
         navigationOptions:{
             title:'工作台',
             tabBarVisible:true,
@@ -67,7 +75,7 @@ const AppTabScreenNavigator = TabNavigator({
 
     },
     tabPageThree:{
-        screen:XAppThirdTabScreen,
+        screen:OfilmPortalTabScreen,
         navigationOptions:{
             title:'门户',
             tabBarVisible:true,
@@ -94,7 +102,7 @@ const AppTabScreenNavigator = TabNavigator({
         }
     },
     tabPageFour:{
-        screen:XAppFourthTabScreen,
+        screen:OfilmMeTabScreen,
         navigationOptions:{
             title:'我的',
             tabBarVisible:true,
