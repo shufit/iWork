@@ -74,6 +74,8 @@ class LoginScreen extends XAppBaseScreen {
                         <TextInput
                             style={styles.textInput}
                             placeholder={'请输入你的工号'}
+                            padding={0}
+                            underlineColorAndroid={'transparent'}
                             onChangeText={(text)=>{
                                 this.userName = text;
                             }}
