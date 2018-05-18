@@ -53,7 +53,7 @@ class PortalCellItem extends Component {
                         [
                             {text: 'OK', onPress: () => console.log('OK Pressed!')},
                         ]
-                    )
+                    );
                     this.onClick && this.onClick();
                 }}>
                     <View style={styles.portalSubCellItem}>
@@ -103,26 +103,44 @@ class OfilmPortalTabScreen extends XAppBaseScreen {
                         <PortalCellItem
                             title={'办公中心'}
                             iconSource={require('../../Images/Portal/menhu_01.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                         <PortalCellItem
                             title={'生产管理'}
                             iconSource={require('../../Images/Portal/menhu_02.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                         <PortalCellItem
                             title={'人事中心'}
                             iconSource={require('../../Images/Portal/menhu_03.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                         <PortalCellItem
                             title={'财务中心'}
                             iconSource={require('../../Images/Portal/menhu_04.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                         <PortalCellItem
                             title={'EAP中心'}
                             iconSource={require('../../Images/Portal/menhu_05.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                         <PortalCellItem
                             title={'论坛中心'}
                             iconSource={require('../../Images/Portal/menhu_06.png')}
+                            onClick={()=>{
+
+                            }}
                         />
                     </View>
                 </ScrollView>
