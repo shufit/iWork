@@ -8,6 +8,7 @@ import {
 } from './Screens/XAppBaseScreen';
 
 import SmsCountDownButton from './Components/SmsCountDownButton';
+import UserAvatar from './Components/UserAvatar';
 
 import {
     httpGet,
@@ -19,6 +20,7 @@ export {
     NormalNavigationOptions,
 
     SmsCountDownButton,
+    UserAvatar,
     httpGet,
     httpPost,
 
