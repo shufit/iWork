@@ -9,6 +9,7 @@ import {
 
 import SmsCountDownButton from './Components/SmsCountDownButton';
 import UserAvatar from './Components/UserAvatar';
+import Swiper from './Components/Swiper';
 
 import {
     httpGet,
@@ -21,6 +22,7 @@ export {
 
     SmsCountDownButton,
     UserAvatar,
+    Swiper,
     httpGet,
     httpPost,
 

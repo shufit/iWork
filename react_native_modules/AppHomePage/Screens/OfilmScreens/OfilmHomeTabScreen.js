@@ -21,6 +21,7 @@ import {
 import {
     XAppBaseScreen,
     NormalNavigationOptions,
+    Swiper,
 
 } from 'AppBase';
 
