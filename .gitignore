@@ -5,3 +5,8 @@ node_modules
 ios/build
 ios/bundle
 ios/Pods
+android/.gradle
+android/.idea
+android/build
+android/app/build
+
