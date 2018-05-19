@@ -4,31 +4,7 @@
     <list default="true" id="2faaf492-2559-4436-81d2-2ad540306126" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskJars.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/debug/com/rnproject/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/debug/com/rnproject/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/backends/pipeline/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/backends/pipeline/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/fbui/textlayoutbuilder/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/fbui/textlayoutbuilder/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/react/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/react/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/rnproject/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/rnproject/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" beforeDir="false" />
@@ -131,104 +107,6 @@
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/build-info/debug/build-info.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/fbui/textlayoutbuilder/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/fbui/textlayoutbuilder/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$xml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$mipmap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R$xml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/rnproject/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/fbui/textlayoutbuilder/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/fbui/textlayoutbuilder/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/facebook/react/R$xml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/BuildConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$anim.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$anim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$attr.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$attr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$bool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$mipmap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R$xml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental-verifier/debug/com/rnproject/R.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3uaQhEn6tnwxW_NFEz4TDBAnv2o=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6OsJdxHURzEuaMvw_qhqkErThWA=" beforeDir="false" />
@@ -297,10 +175,6 @@
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/ir_slices/debug/slice_7/AndroidManifest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/ir_slices/debug/slice_8/AndroidManifest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/ir_slices/debug/slice_9/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/AMUKKmncvGYGbUPZzi0OHK1jOl4=" beforeDir="false" />
@@ -314,9 +188,7 @@
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifest-checker/debug/manifest.crc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifest-checker/debug/manifest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/density/debug/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/instant-run/debug/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/debug/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/debug/resources-debug.ap_" beforeDir="false" />
@@ -712,21 +584,9 @@
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/resources/instant-run/debug/output.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/resources/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/splits-support/debug/apk-list/apk-list.gson" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/splits-support/debug/split-list/split-list.gson" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" />
@@ -1054,11 +914,8 @@
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libyoga.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86_64/libimagepipeline.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/RNProject.xcworkspace/xcuserdata/shixiaohui.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/RNProject.xcworkspace/xcuserdata/shixiaohui.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -1093,7 +950,7 @@
       <file leaf-file-name="Swiper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react_native_modules/AppBase/Components/Swiper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10410">
+            <state relative-caret-position="10635">
               <caret line="709" column="82" selection-start-line="709" selection-start-column="82" selection-end-line="709" selection-end-column="82" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -1103,11 +960,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="OfilmHomeTabScreen.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="535">
+              <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1170,8 +1030,8 @@
         <option value="$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmMeTabScreen.js" />
         <option value="$PROJECT_DIR$/react_native_modules/AppBase/Components/Swiper.js" />
         <option value="$PROJECT_DIR$/react_native_modules/AppBase/index.js" />
-        <option value="$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js" />
       </list>
     </option>
   </component>
@@ -1198,8 +1058,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
-    <option name="y" value="188" />
+    <option name="x" value="357" />
+    <option name="y" value="24" />
     <option name="width" value="1400" />
     <option name="height" value="839" />
   </component>
@@ -1219,7 +1079,35 @@
             <path>
               <item name="iWork" type="b2602c69:ProjectViewProjectNode" />
               <item name="iWork" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="react_native_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iWork" type="462c0819:PsiDirectoryNode" />
+              <item name="react_native_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="AppHomePage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iWork" type="462c0819:PsiDirectoryNode" />
+              <item name="react_native_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="AppHomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iWork" type="462c0819:PsiDirectoryNode" />
+              <item name="react_native_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="AppHomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iWork" type="462c0819:PsiDirectoryNode" />
+              <item name="react_native_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="AppHomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Screens" type="462c0819:PsiDirectoryNode" />
+              <item name="OfilmScreens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1279,15 +1167,16 @@
       <workItem from="1526436546281" duration="17054000" />
       <workItem from="1526521670838" duration="18715000" />
       <workItem from="1526604502444" duration="20596000" />
-      <workItem from="1526690667162" duration="1235000" />
+      <workItem from="1526690667162" duration="3479000" />
+      <workItem from="1526710485869" duration="6026000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90384000" />
+    <option name="totallyTimeSpent" value="98654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="188" width="1400" height="839" extended-state="0" />
+    <frame x="290" y="106" width="1400" height="839" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -1295,8 +1184,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1557,13 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmWorkStationTabScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1575,17 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react_native_modules/AppBase/Components/Swiper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10410">
-          <caret line="709" column="82" selection-start-line="709" selection-start-column="82" selection-end-line="709" selection-end-column="82" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#67#107#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1610,8 +1481,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="209">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react_native_modules/AppBase/Components/Swiper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10635">
+          <caret line="709" column="82" selection-start-line="709" selection-start-column="82" selection-end-line="709" selection-end-column="82" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#67#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react_native_modules/AppHomePage/Screens/OfilmScreens/OfilmHomeTabScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

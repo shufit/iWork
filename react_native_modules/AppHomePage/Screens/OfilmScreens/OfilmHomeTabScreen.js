@@ -32,6 +32,35 @@ import {
 
 const {A, a} = Grid;
 
+class HomeItem extends Component {
+
+    constructor(props) {
+        super(props);
+        this.style = props.style;
+        this.title = props.title;
+        this.iconSource = props.iconSource;
+        this.onClick = props.onClick;
+    }
+
+    render() {
+        return (
+            <TouchableOpacity onPress={()=>{
+                this.onClick && this.onClick();
+            }}>
+                <View style={[styles.itemContainer, this.style]}>
+                    <View style={styles.itemSubContainer}>
+                        <Image
+                            style={styles.itemIcon}
+                            source={this.iconSource}
+                        />
+                        <Text style={styles.itemTitle}>{this.title}</Text>
+                    </View>
+                </View>
+            </TouchableOpacity>
+        );
+    }
+}
+
 class OfilmHomeTabScreen extends XAppBaseScreen {
 
     static navigationOptions = ({ navigation, navigationOptions }) => ({
@@ -57,8 +86,71 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
             <View style={styles.container}>
                 <ScrollView>
                     <View style={styles.contentContainer}>
+                        {this._renderHeaderSwiper()}
+                        {this._renderItems()}
                     </View>
                 </ScrollView>
+            </View>
+        );
+    }
+
+    _renderHeaderSwiper() {
+        return (
+            <Swiper
+                height={25 * a}
+                autoplay={true}
+                autoplayTimeout={5}
+            >
+                <View style={styles.slide1}>
+                    <Text style={styles.slideText}>Hello</Text>
+                </View>
+                <View style={styles.slide2}>
+                    <Text style={styles.slideText}>O-Film</Text>
+                </View>
+            </Swiper>
+        );
+    }
+
+    _renderItems() {
+        return (
+            <View style={{width: 60 * a,height:40 * a, flexDirection:'row'}}>
+                <HomeItem
+                    style={{width: 20 * a, height: 40 * a, backgroundColor:'#9DD6EB'}}
+                    title={'通知公告'}
+                    iconSource={require('../../Images/Home/home_item_icon.png')}
+                    onClick={()=>{
+
+                    }}
+                />
+                <View style={{width:40 * a,height:40 * a,backgroundColor:'transparent', flexDirection:'column'}}>
+                    <View style={{width: 40 * a, height: 20 * a, flexDirection:'row'}}>
+                        <HomeItem
+                            style={{width: 20 * a, height: 20 * a, backgroundColor:'red'}}
+                            title={'企业风采'}
+                            iconSource={require('../../Images/Home/home_item_icon.png')}
+                            onClick={()=>{
+
+                            }}
+                        />
+                        <HomeItem
+                            style={{width: 20 * a, height: 20 * a, backgroundColor:'blue'}}
+                            title={'学习园地'}
+                            iconSource={require('../../Images/Home/home_item_icon.png')}
+                            onClick={()=>{
+
+                            }}
+                        />
+                    </View>
+                    <HomeItem
+                        style={{width: 40 * a, height: 20 * a, backgroundColor:'yellow'}}
+                        title={'联系我们'}
+                        iconSource={require('../../Images/Home/home_item_icon.png')}
+                        onClick={()=>{
+
+                        }}
+                    />
+
+                </View>
             </View>
         );
     }
@@ -75,7 +167,52 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: '#fff',
         flexDirection:'column',
+    },
+    slide1: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#9DD6EB'
+    },
+    slide2: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#97CAE5'
+    },
+    slideText: {
+        color: '#fff',
+        fontSize: 30,
+        fontWeight: 'bold'
+    },
+
+    itemContainer: {
+        flexDirection:'column',
+        borderWidth: 2,
+        borderColor: '#fff',
+        backgroundColor:'#97CAE5',
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    itemSubContainer: {
+        flexDirection:'column',
+        width: 12 * a,
+        height: 13 * a,
+        alignItems:'center',
+        backgroundColor:'transparent',
+        justifyContent:'space-between',
+    },
+    itemIcon:{
+        width: 6 * a,
+        height: 6 * a,
+    },
+    itemTitle: {
+        fontSize: 16,
+        color: '#fff',
+        textAlign:'center',
     }
+
+
 
 });
 
