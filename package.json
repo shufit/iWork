@@ -8,15 +8,16 @@
   },
   "dependencies": {
     "babel-eslint": "^8.2.3",
+    "contrast": "^1.0.1",
     "crypto-js": "^3.1.9-1",
+    "initials": "^2.1.5",
     "npm": "^6.0.1",
     "react": "16.3.0-alpha.2",
     "react-native": "0.54.2",
     "react-native-global-ui": "^1.0.8-alpha2",
     "react-native-root-toast": "^3.0.1",
     "react-navigation": "^1.5.11",
-    "contrast": "^1.0.1",
-    "initials": "^2.1.5"
+    "realm": "^2.6.0"
   },
   "devDependencies": {
     "babel-jest": "23.0.0-alpha.0",
