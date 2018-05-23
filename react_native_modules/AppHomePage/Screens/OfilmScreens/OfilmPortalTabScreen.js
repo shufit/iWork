@@ -47,13 +47,13 @@ class PortalCellItem extends Component {
 
             <View style={styles.portalCellItem}>
                 <TouchableOpacity onPress={() => {
-                    Alert.alert(
-                        '提示',
-                        '功能开发中',
-                        [
-                            {text: 'OK', onPress: () => console.log('OK Pressed!')},
-                        ]
-                    );
+                    // Alert.alert(
+                    //     '提示',
+                    //     '功能开发中',
+                    //     [
+                    //         {text: 'OK', onPress: () => console.log('OK Pressed!')},
+                    //     ]
+                    // );
                     this.onClick && this.onClick();
                 }}>
                     <View style={styles.portalSubCellItem}>
@@ -132,6 +132,7 @@ class OfilmPortalTabScreen extends XAppBaseScreen {
                             title={'EAP中心'}
                             iconSource={require('../../Images/Portal/menhu_05.png')}
                             onClick={()=>{
+                                this._gotoEAPCenter();
 
                             }}
                         />
@@ -146,6 +147,16 @@ class OfilmPortalTabScreen extends XAppBaseScreen {
                 </ScrollView>
             </View>
         );
+    }
+
+    _gotoEAPCenter() {
+        this.push('EAPCenter',{
+            title:'EAP心灵家园',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        },null);
     }
 
 }

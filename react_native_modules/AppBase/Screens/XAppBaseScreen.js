@@ -45,8 +45,9 @@ const NormalNavigationOptions = ({navigation, navigationOptions})=>{
                 }}>
                     <View style={styles.headerLeftView}>
                         <Image
-                            source={require('../Images/back.png')}
+                            source={require('../Images/back_arrow.png')}
                             style={styles.headerBackIcon}
+                            resizeMode={'stretch'}
                         />
                         {showBackTitle ? <Text style={styles.headerBackTitle}>{'返回'}</Text> : null}
                     </View>
@@ -250,7 +251,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
     },
     headerBackIcon:{
-        width:15,
+        width:20,
         height:20,
         marginLeft:13,
     },

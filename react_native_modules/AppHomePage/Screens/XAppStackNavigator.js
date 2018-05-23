@@ -19,6 +19,10 @@ import {
     ResetPwdScreen,
 } from 'AppLogin';
 
+import {
+    EAPMainScreen,
+} from 'EAPCenter'
+
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
 
@@ -59,9 +63,17 @@ const RouteConfigs = {
     },
     resetPwd:{
        screen: ResetPwdScreen,
-    }
+    },
 
     /***********************************************************************************************************************/
+
+
+    /*********************************************EAPCenter模块页面*********************************************************/
+
+    EAPCenter:{
+        screen:EAPMainScreen,
+    },
+    /*********************************************************************************************************************/
 
 };
 
