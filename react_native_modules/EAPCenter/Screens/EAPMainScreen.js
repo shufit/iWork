@@ -112,7 +112,7 @@ class EAPMainScreen extends XAppBaseScreen {
                             title={'心理讲堂'}
                             imgSource={require('../Images/eap_main_icon1.png')}
                             onClick={()=>{
-
+                                this._gotoPsychologicalHall()
                             }}
                         >
                         </EAPMainItem>
@@ -128,7 +128,7 @@ class EAPMainScreen extends XAppBaseScreen {
                             title={'健康生活'}
                             imgSource={require('../Images/eap_main_icon3.png')}
                             onClick={()=>{
-
+                                this._gotoHealthLife();
                             }}
                         >
                         </EAPMainItem>
@@ -148,7 +148,7 @@ class EAPMainScreen extends XAppBaseScreen {
                             title={'趣味测试'}
                             imgSource={require('../Images/eap_main_icon5.png')}
                             onClick={()=>{
-
+                                this._gotoInterestingTest();
                             }}
                         >
                         </EAPMainItem>
@@ -156,6 +156,37 @@ class EAPMainScreen extends XAppBaseScreen {
                 </ImageBackground>
             </View>
         );
+    }
+
+    _gotoPsychologicalHall() {
+        this.push('psychologicalHall', {
+            title:'心理讲堂',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+
+        }, null)
+    }
+
+    _gotoHealthLife() {
+        this.push('healthLife', {
+            title:'健康生活',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        }, null)
+    }
+
+    _gotoInterestingTest() {
+        this.push('interestingTest', {
+            title:'趣味测试',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        }, null)
     }
 
 }

@@ -21,6 +21,9 @@ import {
 
 import {
     EAPMainScreen,
+    PsychologicalHallScreen,
+    HealthLifeScreen,
+    InterestingTestScreen,
 } from 'EAPCenter'
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
@@ -72,6 +75,15 @@ const RouteConfigs = {
 
     EAPCenter:{
         screen:EAPMainScreen,
+    },
+    psychologicalHall:{
+        screen:PsychologicalHallScreen,
+    },
+    healthLife:{
+        screen:HealthLifeScreen,
+    },
+    interestingTest:{
+        screen:InterestingTestScreen,
     },
     /*********************************************************************************************************************/
 

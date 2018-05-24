@@ -29,6 +29,7 @@ const NormalNavigationOptions = ({navigation, navigationOptions})=>{
             fontSize:18,
             color:'black',
             fontWeight:'500',
+            alignSelf:'center',
         },
         headerStyle: {
             backgroundColor:'white',

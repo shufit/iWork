@@ -120,8 +120,6 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                     iconSource={require('../../Images/Home/home_item_icon.png')}
                     onClick={()=>{
 
-                        this._testRealmDB();
-
                     }}
                 />
                 <View style={{width:40 * a,height:40 * a,backgroundColor:'transparent', flexDirection:'column'}}>
