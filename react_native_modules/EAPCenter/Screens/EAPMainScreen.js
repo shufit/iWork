@@ -117,7 +117,7 @@ class EAPMainScreen extends XAppBaseScreen {
                         >
                         </EAPMainItem>
                         <EAPMainItem
-                            title={'预约'}
+                            title={'咨询预约'}
                             imgSource={require('../Images/eap_main_icon2.png')}
                             onClick={()=>{
 
@@ -145,7 +145,7 @@ class EAPMainScreen extends XAppBaseScreen {
                         >
                         </EAPMainItem>
                         <EAPMainItem
-                            title={'趣味测试'}
+                            title={'心理测试'}
                             imgSource={require('../Images/eap_main_icon5.png')}
                             onClick={()=>{
                                 this._gotoInterestingTest();

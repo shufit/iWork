@@ -41,10 +41,6 @@ class InterestingTestItem extends Component {
         this.onClick = props.onClick;
         this.imgSource = props.imgSource;
 
-        this.state  = {
-            indexLabel:'全部'
-        }
-
     }
 
     render() {
@@ -54,7 +50,7 @@ class InterestingTestItem extends Component {
             }}>
                 <View style={[{
                     height: 8 * a,
-                    width: 12 * a,
+                    width: 16 * a,
                     flexDirection:'row',
                     alignItems:'center',
                 },this.style]}>
@@ -64,7 +60,7 @@ class InterestingTestItem extends Component {
                         source={this.imgSource}
                     />
                     <Text
-                        style={{color:'#707070', fontSize:14, marginLeft: a}}
+                        style={{color:'#707070', fontSize:12, marginLeft: a}}
                     >{this.title}
                     </Text>
 
@@ -173,7 +169,7 @@ class InterestingTestScreen extends XAppBaseScreen {
             }}>
 
                 <InterestingTestItem
-                    title={'全部'}
+                    title={'专业测试'}
                     imgSource={require('../Images/eap_interest_icon1.png')}
                     onClick={()=>{
 
@@ -181,49 +177,35 @@ class InterestingTestScreen extends XAppBaseScreen {
                 />
 
                 <InterestingTestItem
-                    title={'情感'}
-                    imgSource={require('../Images/eap_interest_icon2.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <InterestingTestItem
-                    title={'性格'}
-                    imgSource={require('../Images/eap_interest_icon3.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <InterestingTestItem
-                    title={'智商'}
-                    imgSource={require('../Images/eap_interest_icon4.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <InterestingTestItem
-                    title={'影视'}
-                    imgSource={require('../Images/eap_interest_icon5.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <InterestingTestItem
-                    title={'恶搞'}
-                    imgSource={require('../Images/eap_interest_icon6.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <InterestingTestItem
-                    title={'星座'}
+                    title={'事业&性格'}
                     imgSource={require('../Images/eap_interest_icon7.png')}
                     onClick={()=>{
 
                     }}
                 />
                 <InterestingTestItem
-                    title={'其他'}
+                    title={'智商&情商'}
+                    imgSource={require('../Images/eap_interest_icon4.png')}
+                    onClick={()=>{
+
+                    }}
+                />
+                <InterestingTestItem
+                    title={'情感&婚姻'}
+                    imgSource={require('../Images/eap_interest_icon2.png')}
+                    onClick={()=>{
+
+                    }}
+                />
+                <InterestingTestItem
+                    title={'星座&生肖'}
+                    imgSource={require('../Images/eap_interest_icon3.png')}
+                    onClick={()=>{
+
+                    }}
+                />
+                <InterestingTestItem
+                    title={'全部'}
                     imgSource={require('../Images/eap_interest_icon8.png')}
                     onClick={()=>{
 
@@ -244,7 +226,7 @@ class InterestingTestScreen extends XAppBaseScreen {
                     marginBottom: 2 * a,
                 }}
             >
-                {`当前分类:  ${this.state.indexLabel}`}
+                {'当前分类'}
             </Text>
         );
     }
