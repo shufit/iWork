@@ -71,6 +71,89 @@ class InterestingTestItem extends Component {
     }
 }
 
+class InterestingTestCellItem extends Component {
+
+    constructor(props) {
+        super(props);
+        this.title = props.title;
+        this.onClick = props.onClick;
+        this.imgSource = props.imgSource;
+        this.description = props.description;
+    }
+
+    render() {
+        return (
+            <TouchableOpacity onPress={()=>{
+                this.onClick && this.onClick();
+
+            }}>
+                <View style={{
+                    height : 10 * a,
+                    width: 56 * a,
+                    flexDirection:'row',
+                    alignItems:'center',
+                    justifyContent:'space-between',
+
+                }}>
+                    <Image
+                        style={{
+                            height:6 * a,
+                            width: 8 * a,
+                        }}
+                        source={this.imgSource}
+                        resizeMode={'stretch'}
+                    />
+                    <View
+                        style={{
+                            flexDirection:'column',
+                            height: 6 * a,
+                            width: 36 * a,
+                        }}
+                    >
+                        <Text
+                            style={{
+                                fontSize: 14,
+                                color:'#808080'
+                            }}
+                        >
+                            {this.title}
+                        </Text>
+                        <Text
+                            style={{
+                                fontSize: 12,
+                                color:'#808080'
+                            }}
+                        >
+                            {this.description}
+                        </Text>
+                    </View>
+                    <View
+                        style={{
+                            width: 8 * a,
+                            height: 4 * a,
+                            alignItems:'center',
+                            justifyContent:'center',
+                            backgroundColor:'#ff9600',
+                            borderRadius:3
+                        }}
+                    >
+                        <Text
+                            style={{
+                                color:'#fff',
+                                fontSize:14,
+                                textAlign:'center',
+                            }}
+
+                        >{'开始'}
+                        </Text>
+                    </View>
+                </View>
+
+            </TouchableOpacity>
+        );
+    }
+}
+
 class InterestingTestScreen extends XAppBaseScreen {
 
     static navigationOptions = ({ navigation, navigationOptions }) => ({
@@ -99,6 +182,7 @@ class InterestingTestScreen extends XAppBaseScreen {
                     {this._renderBanner()}
                     {this._renderItems()}
                     {this._renderIndexLabel()}
+                    {this._renderCellItems()}
                 </ScrollView>
 
             </View>
@@ -230,6 +314,20 @@ class InterestingTestScreen extends XAppBaseScreen {
             </Text>
         );
     }
+
+    _renderCellItems() {
+        return (
+            <InterestingTestCellItem
+                title={'成长型思维评估'}
+                imgSource={require('../Images/eap_interest_cellIcon1.png')}
+                description={'如何摆脱固化思维模式？'}
+                onClick={()=>{
+
+                }}
+            />
+        );
+    }
+
 
 }
 

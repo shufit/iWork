@@ -112,7 +112,7 @@ class EAPMainScreen extends XAppBaseScreen {
                             title={'心理讲堂'}
                             imgSource={require('../Images/eap_main_icon1.png')}
                             onClick={()=>{
-                                this._gotoPsychologicalHall()
+                                this._gotoPsychologicalHall();
                             }}
                         >
                         </EAPMainItem>
@@ -120,7 +120,7 @@ class EAPMainScreen extends XAppBaseScreen {
                             title={'咨询预约'}
                             imgSource={require('../Images/eap_main_icon2.png')}
                             onClick={()=>{
-
+                                this._gotoAppointment();
                             }}
                         >
                         </EAPMainItem>
@@ -187,6 +187,16 @@ class EAPMainScreen extends XAppBaseScreen {
                 this.pop();
             }
         }, null)
+    }
+
+    _gotoAppointment() {
+        this.push('appointment', {
+            title:'EAP预约',
+            showBackTitle: false,
+            onBackPress:()=>{
+                this.pop();
+            }
+        },null)
     }
 
 }
