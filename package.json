@@ -15,9 +15,11 @@
     "npm": "^6.0.1",
     "react": "16.3.0-alpha.2",
     "react-native": "0.54.2",
-    "react-native-calendar-picker": "^5.19.0",
+    "react-native-calendars": "^1.19.3",
     "react-native-global-ui": "^1.0.8-alpha2",
+    "react-native-htmlview": "^0.12.1",
     "react-native-root-toast": "^3.0.1",
+    "react-native-storage": "^0.2.2",
     "react-navigation": "^1.5.11",
     "realm": "^2.6.0"
   },

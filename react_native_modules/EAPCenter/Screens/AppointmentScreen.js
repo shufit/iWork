@@ -9,7 +9,8 @@ import {
     ScrollView,
     TouchableOpacity,
     ImageBackground,
-    TextInput
+    TextInput,
+    Picker
 } from 'react-native';
 
 import {
@@ -23,6 +24,11 @@ import {
     NormalNavigationOptions,
     Swiper,
     DatePickerModal,
+    RadioGroup,
+    RadioButton,
+    CheckBox,
+    DropdownModal,
+    SelectInput,
 
 } from 'AppBase';
 
@@ -31,7 +37,7 @@ import {
     HUD,
 } from 'react-native-global-ui';
 
-import CalendarPicker from 'react-native-calendar-picker';
+
 
 const {A, a} = Grid;
 
@@ -72,16 +78,38 @@ class AppointmentScreen extends XAppBaseScreen {
                         title={'显示日期'}
                         color={'#0079d7'}
                     />
+
+                    <CheckBox
+                        style={{flex: 1, padding: 10}}
+                        onClick={()=>{
+
+                        }}
+                        isChecked={false}
+                        leftText={'item 1'}
+                    />
+                    <CheckBox
+                        style={{flex: 1, padding: 10}}
+                        onClick={()=>{
+
+                        }}
+                        isChecked={false}
+                        leftText={'item 1'}
+                    />
+                    <CheckBox
+                        style={{flex: 1, padding: 10}}
+                        onClick={()=>{
+
+                        }}
+                        isChecked={false}
+                        rightText={'item 1'}
+                    />
+
+
+                        <SelectInput
+                            options={['option 1option 1option 1', 'option 2', 'option3']}
+                        />
+
                 </ScrollView>
-                <DatePickerModal
-                    onConfirmPress={(date)=>{
-
-                    }}
-                    onCancelPress={()=>{
-
-                    }}
-                    showDatePicker={this.state.showDatePicker}
-                />
             </View>
         );
     }
