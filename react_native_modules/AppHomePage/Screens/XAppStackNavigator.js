@@ -25,6 +25,8 @@ import {
     HealthLifeScreen,
     InterestingTestScreen,
     AppointmentScreen,
+    AppointmentSuccessScreen,
+    AppointmentProtocolScreen,
 } from 'EAPCenter'
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
@@ -88,6 +90,12 @@ const RouteConfigs = {
     },
     appointment:{
         screen:AppointmentScreen,
+    },
+    appointmentSuc:{
+        screen:AppointmentSuccessScreen,
+    },
+    appointmentProtocol:{
+        screen:AppointmentProtocolScreen,
     }
     /*********************************************************************************************************************/
 
