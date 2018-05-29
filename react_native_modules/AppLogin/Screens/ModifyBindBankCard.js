@@ -185,7 +185,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
         return (
             <View style={styles.subInputContainer}>
                 <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_personal_id.png')}
+                       source={require('../Images/bindcard_address.png')}
                 />
                 <Text style={styles.labelText}>{'所在地'}</Text>
                 <View style={styles.verticalLine}/>
@@ -209,7 +209,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
         return (
             <View style={styles.subInputContainer}>
                 <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_personal_id.png')}
+                       source={require('../Images/bindcard_bank.png')}
                 />
                 <Text style={styles.labelText}>{'银    行'}</Text>
                 <View style={styles.verticalLine}/>
@@ -233,7 +233,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
         return (
             <View style={styles.subInputContainer}>
                 <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_personal_id.png')}
+                       source={require('../Images/bindcard_bankcard.png')}
                 />
                 <Text style={styles.labelText}>{'银行卡号'}</Text>
                 <View style={styles.verticalLine}/>
@@ -257,7 +257,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
         return (
             <View style={styles.subInputContainer}>
                 <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_personal_id.png')}
+                       source={require('../Images/bindcard_bankcard.png')}
                 />
                 <Text style={styles.labelText}>{'确认卡号'}</Text>
                 <View style={styles.verticalLine}/>
