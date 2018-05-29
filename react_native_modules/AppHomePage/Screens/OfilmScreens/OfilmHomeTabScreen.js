@@ -115,7 +115,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
         return (
             <View style={{width: 60 * a,height:40 * a, flexDirection:'row'}}>
                 <HomeItem
-                    style={{width: 20 * a, height: 40 * a, backgroundColor:'#98F5FF'}}
+                    style={{width: 20 * a, height: 40 * a, backgroundColor:'#9fe0ff'}}
                     title={'通知公告'}
                     iconSource={require('../../Images/Home/home_item_icon.png')}
                     onClick={()=>{
@@ -125,7 +125,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                 <View style={{width:40 * a,height:40 * a,backgroundColor:'transparent', flexDirection:'column'}}>
                     <View style={{width: 40 * a, height: 20 * a, flexDirection:'row'}}>
                         <HomeItem
-                            style={{width: 20 * a, height: 20 * a, backgroundColor:'#EEB4B4'}}
+                            style={{width: 20 * a, height: 20 * a, backgroundColor:'#ffaca8'}}
                             title={'企业风采'}
                             iconSource={require('../../Images/Home/home_item_icon.png')}
                             onClick={()=>{
@@ -133,7 +133,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                             }}
                         />
                         <HomeItem
-                            style={{width: 20 * a, height: 20 * a, backgroundColor:'#C1FFC1'}}
+                            style={{width: 20 * a, height: 20 * a, backgroundColor:'#Ccefaa'}}
                             title={'学习园地'}
                             iconSource={require('../../Images/Home/home_item_icon.png')}
                             onClick={()=>{
@@ -142,7 +142,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                         />
                     </View>
                     <HomeItem
-                        style={{width: 40 * a, height: 20 * a, backgroundColor:'#FFC125'}}
+                        style={{width: 40 * a, height: 20 * a, backgroundColor:'#ffd154'}}
                         title={'联系我们'}
                         iconSource={require('../../Images/Home/home_item_icon.png')}
                         onClick={()=>{

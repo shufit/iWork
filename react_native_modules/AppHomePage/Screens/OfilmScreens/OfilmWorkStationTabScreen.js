@@ -48,14 +48,6 @@ class WorkStationItem extends Component {
     render() {
         return (
             <TouchableOpacity onPress={()=>{
-
-                Alert.alert(
-                    '提示',
-                    '功能开发中',
-                    [
-                        {text: 'OK', onPress: () => console.log('OK Pressed!')},
-                    ]
-                );
                 this.onClick && this.onClick();
             }}>
                 <View style={[styles.itemContainer, this.style]}>
@@ -133,7 +125,13 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                         title={'银行卡'}
                         iconSource={require('../../Images/WorkStation/gzt_03.png')}
                         onClick={()=>{
-
+                            this.push('modifyBindCard', {
+                                title:'更绑银行卡',
+                                showBackTitle: false,
+                                onBackPress:()=>{
+                                    this.pop();
+                                }
+                            }, null)
                         }}
                     />
                     <WorkStationItem
@@ -261,7 +259,7 @@ const styles = StyleSheet.create({
     itemContainer:{
         width: 16 * a,
         height: 6 * a,
-        backgroundColor:'#dcdcdc',
+        backgroundColor:'#f1f1f1',
         borderRadius: 4,
         flexDirection:'row',
         alignItems:'center',

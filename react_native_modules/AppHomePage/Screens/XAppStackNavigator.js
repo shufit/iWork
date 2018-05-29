@@ -17,6 +17,8 @@ import {
     LoginScreen,
     FindPwdScreen,
     ResetPwdScreen,
+    BindPhoneScreen,
+    ModifyBindBankCard,
 } from 'AppLogin';
 
 import {
@@ -69,6 +71,12 @@ const RouteConfigs = {
     },
     resetPwd:{
        screen: ResetPwdScreen,
+    },
+    bindPhone:{
+        screen: BindPhoneScreen,
+    },
+    modifyBindCard:{
+        screen:ModifyBindBankCard,
     },
 
     /***********************************************************************************************************************/

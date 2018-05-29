@@ -14,6 +14,7 @@ import DatePickerModal from './Components/DatePickerModal';
 import RadioButton from './Components/RadioButton';
 import RadioGroup from './Components/RadioGroup';
 import CheckBox from './Components/CheckBox';
+import StepIndicator from './Components/StepIndicator';
 import {
     DropdownModal,
     SelectInput,
@@ -38,6 +39,7 @@ export {
     DropdownModal,
     SelectInput,
     CheckBox,
+    StepIndicator,
     httpGet,
     httpPost,
 
