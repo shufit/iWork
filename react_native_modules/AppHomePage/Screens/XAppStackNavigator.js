@@ -31,6 +31,12 @@ import {
     AppointmentProtocolScreen,
 } from 'EAPCenter'
 
+
+import {
+    MySalaryScreen,
+    MySalaryDetailScreen,
+} from 'MySalary'
+
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
 
@@ -104,8 +110,19 @@ const RouteConfigs = {
     },
     appointmentProtocol:{
         screen:AppointmentProtocolScreen,
-    }
+    },
     /*********************************************************************************************************************/
+
+    /*********************************************MySalary薪资模块页面*********************************************************/
+    mySalary:{
+        screen:MySalaryScreen,
+    },
+    mySalaryDetail:{
+        screen:MySalaryDetailScreen,
+    }
+
+    /*********************************************************************************************************************/
+
 
 };
 

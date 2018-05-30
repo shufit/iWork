@@ -454,7 +454,7 @@ class SelectInput extends Component {
 
     render() {
 
-        let {style, ...otherProps} = this.props;
+        let {style, iconImg,...otherProps} = this.props;
         return(
             <TouchableOpacity
                 onPress={()=>{
@@ -486,13 +486,19 @@ class SelectInput extends Component {
     }
 
     _renderRightIcon() {
+        let {iconImg} = this.props;
+
+        if (iconImg === undefined) {
+            iconImg = require('../Images/dropdown_icon.png');
+        }
+
         return (
             <View >
                 <Image
-                    source={require('../Images/dropdown_icon.png')}
+                    source={iconImg}
                     style={{
                         width: 2 * a,
-                        height: a,
+                        height: 2 * a,
                     }}
                     resizeMode={'stretch'}
                 />

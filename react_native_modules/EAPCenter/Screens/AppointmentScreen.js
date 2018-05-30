@@ -283,6 +283,7 @@ class AppointmentScreen extends XAppBaseScreen {
 
                     }}
                     defaultValue={'请选择问题类型'}
+                    animated={false}
                 >
                 </SelectInput>
 
@@ -366,6 +367,7 @@ class AppointmentScreen extends XAppBaseScreen {
 
                         }}
                         defaultValue={'请选择日期'}
+                        animated={false}
                     >
                     </SelectInput>
 
@@ -380,6 +382,7 @@ class AppointmentScreen extends XAppBaseScreen {
                             console.warn()
                         }}
                         defaultValue={'请选择日期'}
+                        animated={false}
                     >
                     </SelectInput>
                 </View>
