@@ -125,6 +125,14 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                         iconSource={require('../../Images/WorkStation/gzt_02.png')}
                         onClick={()=>{
 
+                            this.push('oneCard', {
+                                title:'一卡通',
+                                showBackTitle: false,
+                                onBackPress:()=>{
+                                    this.pop();
+                                }
+                            })
+
                         }}
                     />
                     <WorkStationItem

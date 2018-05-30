@@ -29,13 +29,21 @@ import {
     AppointmentScreen,
     AppointmentSuccessScreen,
     AppointmentProtocolScreen,
-} from 'EAPCenter'
+} from 'EAPCenter';
 
 
 import {
     MySalaryScreen,
     MySalaryDetailScreen,
-} from 'MySalary'
+} from 'MySalary';
+
+
+import {
+    OneCardScreen,
+} from 'OneCard';
+
+
+
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
 
@@ -119,8 +127,14 @@ const RouteConfigs = {
     },
     mySalaryDetail:{
         screen:MySalaryDetailScreen,
-    }
+    },
 
+    /*********************************************************************************************************************/
+
+    /*********************************************OneCard一卡通模块页面*********************************************************/
+    oneCard:{
+        screen:OneCardScreen,
+    }
     /*********************************************************************************************************************/
 
 
