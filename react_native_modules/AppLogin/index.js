@@ -7,6 +7,7 @@ import FindPwdScreen from './Screens/FindPwdScreen';
 import ResetPwdScreen from './Screens/ResetPwdScreen';
 import BindPhoneScreen from "./Screens/BindPhoneScreen";
 import ModifyBindBankCard from "./Screens/ModifyBindBankCard";
+import MyBankCardScreen from "./Screens/MyBankCardScreen";
 
 export {
     LoginScreen,
@@ -14,4 +15,5 @@ export {
     ResetPwdScreen,
     BindPhoneScreen,
     ModifyBindBankCard,
+    MyBankCardScreen,
 };

@@ -19,6 +19,7 @@ import {
     ResetPwdScreen,
     BindPhoneScreen,
     ModifyBindBankCard,
+    MyBankCardScreen,
 } from 'AppLogin';
 
 import {
@@ -91,6 +92,9 @@ const RouteConfigs = {
     },
     modifyBindCard:{
         screen:ModifyBindBankCard,
+    },
+    myBankCard:{
+        screen:MyBankCardScreen,
     },
 
     /***********************************************************************************************************************/

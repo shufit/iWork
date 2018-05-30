@@ -139,8 +139,8 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                         title={'银行卡'}
                         iconSource={require('../../Images/WorkStation/gzt_03.png')}
                         onClick={()=>{
-                            this.push('modifyBindCard', {
-                                title:'更绑银行卡',
+                            this.push('myBankCard', {
+                                title:'银行卡',
                                 showBackTitle: false,
                                 onBackPress:()=>{
                                     this.pop();
