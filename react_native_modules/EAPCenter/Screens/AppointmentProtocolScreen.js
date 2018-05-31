@@ -65,7 +65,8 @@ class AppointmentProtocolScreen extends XAppBaseScreen {
                 <WebView
                     style={styles.webView}
                     automaticallyAdjustContentInsets={false}
-                    source={{html: protocolStr}}
+                    // source={{html: protocolStr}}
+                    source={require('../H5Resource/EAPProtocol.html')}
                     javaScriptEnabled={true}
                     domStorageEnabled={true}
                     decelerationRate="normal"
