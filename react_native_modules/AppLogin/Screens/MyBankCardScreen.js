@@ -67,13 +67,25 @@ class MyBankCardScreen extends XAppBaseScreen {
                 style={{
                     width: 60 * a,
                     height: 25 * a,
-                    flexDirection: 'row',
+                    flexDirection: 'column',
                     alignItems:'center',
 
                 }}
                 source={require('../Images/my_card_header.png')}
                 resizeMode={'stretch'}
             >
+                <View style={{
+                    paddingLeft: 3 * a,
+                    marginTop: 2 * a,
+                    height: 4 * a,
+                    width: 60 * a,
+                    flexDirection: 'row',
+                    alignItems:'center',
+                }}>
+                    <Image style={{height: 3 * a, width: 3 * a}} source={require('../Images/icbc_logo.png')} resizeMode={'stretch'}/>
+                    <Text style={{fontSize:14,color:'#fff', marginLeft: a}}>{'工商银行'}</Text>
+                </View>
+                <Text style={{fontSize:30, color:'#fff', textAlign:'center', marginTop: 2 * a}}>{this._formatCardNo('66666666666666688886')}</Text>
             </ImageBackground>
         );
     }
@@ -125,6 +137,17 @@ class MyBankCardScreen extends XAppBaseScreen {
             </View>
         );
     }
+
+    _formatCardNo(cardNo:Strng) {
+        if (cardNo.length > 4) {
+            let prefixCardNo = cardNo.slice(0,4);
+            let suffixCardNo = cardNo.slice(cardNo.length - 4);
+            let formatCardNo = prefixCardNo + ' ****' + ' **** ' +' **** ' + suffixCardNo;
+            return formatCardNo;
+        }
+        return cardNo;
+    }
+
 }
 
 const styles = StyleSheet.create({
