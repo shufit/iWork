@@ -34,7 +34,7 @@ import {
 
 const {A, a} = Grid;
 
-class AboutiWorkScreen extends XAppBaseScreen {
+class HostelServiceScreen extends XAppBaseScreen {
 
     static navigationOptions = ({ navigation, navigationOptions }) => ({
         ...NormalNavigationOptions({navigation, navigationOptions}),
@@ -50,17 +50,13 @@ class AboutiWorkScreen extends XAppBaseScreen {
 
     });
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <View style={styles.container}>
                 <WebView
                     style={styles.webView}
                     automaticallyAdjustContentInsets={false}
-                    source={require('../H5Resource/AboutiWork.html')}
+                    source={require('../H5Resource/HostelService.html')}
                     javaScriptEnabled={true}
                     domStorageEnabled={true}
                     decelerationRate="normal"
@@ -69,6 +65,7 @@ class AboutiWorkScreen extends XAppBaseScreen {
             </View>
         );
     }
+
 }
 
 const styles = StyleSheet.create({
@@ -86,4 +83,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default AboutiWorkScreen;
+export default HostelServiceScreen;

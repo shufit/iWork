@@ -51,6 +51,8 @@ import {
 
 import {
     AboutiWorkScreen,
+    HRServiceScreen,
+    HostelServiceScreen,
 } from 'LocalH5Pages';
 
 
@@ -168,7 +170,13 @@ const RouteConfigs = {
 
     aboutIWork:{
         screen:AboutiWorkScreen,
-    }
+    },
+    HRService: {
+        screen:HRServiceScreen,
+    },
+    hostelService: {
+        screen:HostelServiceScreen,
+    },
 
     /*********************************************************************************************************************/
 
