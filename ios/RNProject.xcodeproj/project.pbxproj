@@ -58,7 +58,6 @@
 		77531B0D2085D5D800854E52 /* XAppRNHCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B0C2085D5D800854E52 /* XAppRNHCRootViewController.m */; };
 		77531B102085DA1200854E52 /* XAppTabbarModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B0F2085DA1200854E52 /* XAppTabbarModuleManager.m */; };
 		77531B142085E9EA00854E52 /* XAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B132085E9EA00854E52 /* XAppConfig.m */; };
-		77531B4E2087215500854E52 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B4D2087215400854E52 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		77531B9F2089C4EC00854E52 /* WVJBWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B9C2089C4EC00854E52 /* WVJBWebViewManager.m */; };
 		77531BA02089C4EC00854E52 /* WVJBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77531B9D2089C4EC00854E52 /* WVJBWebView.m */; };
 		77A522EC20843AB900AB9BC9 /* XAppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A522EB20843AB900AB9BC9 /* XAppNavigationController.m */; };
@@ -438,7 +437,6 @@
 		77531B122085E9EA00854E52 /* XAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppConfig.h; sourceTree = "<group>"; };
 		77531B132085E9EA00854E52 /* XAppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAppConfig.m; sourceTree = "<group>"; };
 		77531B4C2087215400854E52 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		77531B4D2087215400854E52 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		77531B9B2089C4EC00854E52 /* WVJBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVJBWebView.h; sourceTree = "<group>"; };
 		77531B9C2089C4EC00854E52 /* WVJBWebViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVJBWebViewManager.m; sourceTree = "<group>"; };
 		77531B9D2089C4EC00854E52 /* WVJBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVJBWebView.m; sourceTree = "<group>"; };
@@ -848,7 +846,6 @@
 				77531ACD20859ACF00854E52 /* NSString+sizeWithFontInIOS7.h */,
 				77531AF320859ACF00854E52 /* NSString+sizeWithFontInIOS7.m */,
 				77531B4C2087215400854E52 /* JSONKit.h */,
-				77531B4D2087215400854E52 /* JSONKit.m */,
 			);
 			name = Additions;
 			path = "New Group";
@@ -1570,7 +1567,6 @@
 				77531B0D2085D5D800854E52 /* XAppRNHCRootViewController.m in Sources */,
 				77531BA02089C4EC00854E52 /* WVJBWebView.m in Sources */,
 				77531ABF2084BF9600854E52 /* UIDevice-Hardware.m in Sources */,
-				77531B4E2087215500854E52 /* JSONKit.m in Sources */,
 				77531AB12084BEBE00854E52 /* NSDate+Category.m in Sources */,
 				77A52334208490E100AB9BC9 /* XAppRNRootViewController.m in Sources */,
 				77C00A8B2080518200DFAAFE /* XAppModuleManager+ModuleJump.m in Sources */,

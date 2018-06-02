@@ -117,7 +117,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                 <HomeItem
                     style={{width: 20 * a, height: 40 * a, backgroundColor:'#9fe0ff'}}
                     title={'通知公告'}
-                    iconSource={require('../../Images/Home/home_item_icon.png')}
+                    iconSource={require('../../Images/Home/home_item_icon1.png')}
                     onClick={()=>{
 
                     }}
@@ -127,7 +127,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                         <HomeItem
                             style={{width: 20 * a, height: 20 * a, backgroundColor:'#ffaca8'}}
                             title={'企业风采'}
-                            iconSource={require('../../Images/Home/home_item_icon.png')}
+                            iconSource={require('../../Images/Home/home_item_icon2.png')}
                             onClick={()=>{
 
                             }}
@@ -135,7 +135,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                         <HomeItem
                             style={{width: 20 * a, height: 20 * a, backgroundColor:'#Ccefaa'}}
                             title={'学习园地'}
-                            iconSource={require('../../Images/Home/home_item_icon.png')}
+                            iconSource={require('../../Images/Home/home_item_icon3.png')}
                             onClick={()=>{
 
                             }}
@@ -144,7 +144,7 @@ class OfilmHomeTabScreen extends XAppBaseScreen {
                     <HomeItem
                         style={{width: 40 * a, height: 20 * a, backgroundColor:'#ffd154'}}
                         title={'联系我们'}
-                        iconSource={require('../../Images/Home/home_item_icon.png')}
+                        iconSource={require('../../Images/Home/home_item_icon4.png')}
                         onClick={()=>{
 
                         }}

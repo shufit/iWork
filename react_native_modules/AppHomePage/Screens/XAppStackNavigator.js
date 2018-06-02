@@ -45,6 +45,7 @@ import {
 
 import {
     AttendanceMainScreen,
+    AttendanceDetailScreen,
 } from 'Attendance';
 
 
@@ -151,6 +152,9 @@ const RouteConfigs = {
     attendance:{
         screen: AttendanceMainScreen,
     },
+    attendanceDetail:{
+        screen: AttendanceDetailScreen,
+    }
 
     /*********************************************************************************************************************/
 

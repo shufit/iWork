@@ -102,7 +102,13 @@ class AttendanceMainScreen extends XAppBaseScreen {
                     subTitle={'查看当月考勤异常数据'}
                     imgSource={require('../Images/attendance_icon1.png')}
                     onClick={()=>{
-
+                        this.push('attendanceDetail', {
+                            title:'考勤异常',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        }, null)
                     }}
                 />
                 <AttendanceCellItem
