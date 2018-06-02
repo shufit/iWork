@@ -48,13 +48,6 @@ class MeCellItem extends Component {
 
             <View style={[styles.meCellItem, this.styles]}>
                 <TouchableOpacity onPress={() => {
-                    Alert.alert(
-                        '提示',
-                        '功能开发中',
-                        [
-                            {text: 'OK', onPress: () => console.log('OK Pressed!')},
-                        ]
-                    );
                     this.onClick && this.onClick();
                 }}>
                     <View style={styles.meSubCellItem}>
@@ -183,7 +176,13 @@ class OfilmMeTabScreen extends XAppBaseScreen {
                     title={'关于iWork'}
                     iconSource={require('../../Images/Me/wode_07.png')}
                     onClick={()=>{
-
+                        this.push('aboutIWork', {
+                            title:'关于iWork',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        },null)
                     }}
                 />
 

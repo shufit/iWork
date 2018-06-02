@@ -49,6 +49,11 @@ import {
 } from 'Attendance';
 
 
+import {
+    AboutiWorkScreen,
+} from 'LocalH5Pages';
+
+
 
 
 import XAppNavigationScreen from '../tests/XAppNavigationScreen';
@@ -154,6 +159,15 @@ const RouteConfigs = {
     },
     attendanceDetail:{
         screen: AttendanceDetailScreen,
+    },
+
+    /*********************************************************************************************************************/
+
+
+    /*********************************************LocalH5Pages模块页面*********************************************************/
+
+    aboutIWork:{
+        screen:AboutiWorkScreen,
     }
 
     /*********************************************************************************************************************/
