@@ -211,7 +211,13 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                     title={'IT服务'}
                     iconSource={require('../../Images/WorkStation/gzt_09.png')}
                     onClick={()=>{
-
+                        this.push('itService', {
+                            title:'IT服务',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        }, null)
                     }}
                 />
                 <WorkStationItem

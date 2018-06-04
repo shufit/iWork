@@ -55,6 +55,10 @@ import {
     HostelServiceScreen,
     FoodServiceScreen,
     BusServiceScreen,
+    ITServiceScreen,
+    ComputerPermitScreen,
+    ComputerMaintainScreen,
+    ComputerPurchaseScreen,
 } from 'LocalH5Pages';
 
 
@@ -184,6 +188,19 @@ const RouteConfigs = {
     },
     busService: {
         screen:BusServiceScreen,
+    },
+
+    itService: {
+        screen:ITServiceScreen,
+    },
+    computerPermit: {
+        screen: ComputerPermitScreen,
+    },
+    computerMaintain: {
+        screen: ComputerMaintainScreen,
+    },
+    computerPurchase: {
+        screen: ComputerPurchaseScreen,
     },
 
     /*********************************************************************************************************************/
