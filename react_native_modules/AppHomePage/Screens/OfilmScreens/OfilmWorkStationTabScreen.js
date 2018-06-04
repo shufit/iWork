@@ -245,13 +245,27 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                     iconSource={require('../../Images/WorkStation/gzt_12.png')}
                     onClick={()=>{
 
+                        this.push('foodService', {
+                            title:'食堂服务',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        },)
+
                     }}
                 />
                 <WorkStationItem
                     title={'班车服务'}
                     iconSource={require('../../Images/WorkStation/gzt_13.png')}
                     onClick={()=>{
-
+                        this.push('busService', {
+                            title:'班车服务',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        }, null)
                     }}
                 />
 
