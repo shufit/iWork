@@ -100,34 +100,34 @@ class OfilmPortalTabScreen extends XAppBaseScreen {
             <View style={styles.container}>
                 <ScrollView>
                     <View style={styles.contentContainer}>
-                        <PortalCellItem
-                            title={'办公中心'}
-                            iconSource={require('../../Images/Portal/menhu_01.png')}
-                            onClick={()=>{
+                        {/*<PortalCellItem*/}
+                            {/*title={'办公中心'}*/}
+                            {/*iconSource={require('../../Images/Portal/menhu_01.png')}*/}
+                            {/*onClick={()=>{*/}
 
-                            }}
-                        />
-                        <PortalCellItem
-                            title={'生产管理'}
-                            iconSource={require('../../Images/Portal/menhu_02.png')}
-                            onClick={()=>{
+                            {/*}}*/}
+                        {/*/>*/}
+                        {/*<PortalCellItem*/}
+                            {/*title={'生产管理'}*/}
+                            {/*iconSource={require('../../Images/Portal/menhu_02.png')}*/}
+                            {/*onClick={()=>{*/}
 
-                            }}
-                        />
-                        <PortalCellItem
-                            title={'人事中心'}
-                            iconSource={require('../../Images/Portal/menhu_03.png')}
-                            onClick={()=>{
+                            {/*}}*/}
+                        {/*/>*/}
+                        {/*<PortalCellItem*/}
+                            {/*title={'人事中心'}*/}
+                            {/*iconSource={require('../../Images/Portal/menhu_03.png')}*/}
+                            {/*onClick={()=>{*/}
 
-                            }}
-                        />
-                        <PortalCellItem
-                            title={'财务中心'}
-                            iconSource={require('../../Images/Portal/menhu_04.png')}
-                            onClick={()=>{
+                            {/*}}*/}
+                        {/*/>*/}
+                        {/*<PortalCellItem*/}
+                            {/*title={'财务中心'}*/}
+                            {/*iconSource={require('../../Images/Portal/menhu_04.png')}*/}
+                            {/*onClick={()=>{*/}
 
-                            }}
-                        />
+                            {/*}}*/}
+                        {/*/>*/}
                         <PortalCellItem
                             title={'EAP中心'}
                             iconSource={require('../../Images/Portal/menhu_05.png')}

@@ -92,8 +92,8 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                     <View style={styles.contentContainer}>
                         <Text style={styles.blockTitle}>{'个人自助'}</Text>
                         {this._renderSelfHelp()}
-                        <Text style={styles.blockTitle}>{'审批服务'}</Text>
-                        {this._renderApprovalService()}
+                        {/*<Text style={styles.blockTitle}>{'审批服务'}</Text>*/}
+                        {/*{this._renderApprovalService()}*/}
                         <Text style={styles.blockTitle}>{'服务热线'}</Text>
                         {this._renderHotline()}
                     </View>
@@ -161,13 +161,13 @@ class OfilmWorkStationTabScreen extends XAppBaseScreen {
                             }, null)
                         }}
                     />
-                    <WorkStationItem
-                        title={'派车'}
-                        iconSource={require('../../Images/WorkStation/gzt_05.png')}
-                        onClick={()=>{
+                    {/*<WorkStationItem*/}
+                        {/*title={'派车'}*/}
+                        {/*iconSource={require('../../Images/WorkStation/gzt_05.png')}*/}
+                        {/*onClick={()=>{*/}
 
-                        }}
-                    />
+                        {/*}}*/}
+                    {/*/>*/}
                 </View>
         );
     }

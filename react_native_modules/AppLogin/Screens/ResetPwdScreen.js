@@ -55,6 +55,8 @@ class ResetPwdScreen extends XAppBaseScreen {
             <View style={styles.container}>
                 {this._renderHeader()}
                 <Text style={styles.subTitle}>{'请输入新密码'}</Text>
+                {this._renderOldPwd()}
+                <View style={styles.dividingLine}/>
                 {this._renderNewPwd()}
                 <View style={styles.dividingLine}/>
                 {this._renderConfirmPwd()}
@@ -79,6 +81,28 @@ class ResetPwdScreen extends XAppBaseScreen {
                     {'设置新密码'}
                 </Text>
             </ImageBackground>
+        );
+    }
+
+    _renderOldPwd() {
+        return (
+            <View style={styles.subInputContainer}>
+                <Image style={styles.subIcon}
+                       source={require('../Images/forget_04.png')}
+                />
+                <Text style={styles.labelText}>{'旧密码'}</Text>
+                <View style={styles.verticalLine}/>
+                <TextInput
+                    style={styles.inputText}
+                    placeholder={'请输入原密码'}
+                    secureTextEntry={true}
+                    padding={0}
+                    underlineColorAndroid={'transparent'}
+                    onChangeText={(text)=>{
+
+                    }}
+                />
+            </View>
         );
     }
 

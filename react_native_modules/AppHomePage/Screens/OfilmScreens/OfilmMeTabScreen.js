@@ -54,11 +54,13 @@ class MeCellItem extends Component {
                         <Image
                             source={this.iconSource}
                             style={styles.cellItemIcon}
+                            resizeMode={'stretch'}
                         />
                         <Text style={styles.cellItemText}>{this.title}</Text>
                         <Image
                             source={require('../../Images/Portal/menhu_07.png')}
                             style={styles.leftArrowIcon}
+                            resizeMode={'stretch'}
                         />
 
                     </View>
@@ -130,51 +132,36 @@ class OfilmMeTabScreen extends XAppBaseScreen {
             <View style={styles.listView}>
 
                 <MeCellItem
-                    title={'通讯录'}
-                    iconSource={require('../../Images/Me/wode_01.png')}
+                    title={'重新绑定手机号码'}
+                    iconSource={require('../../Images/Me/me_icon01.png')}
                     onClick={()=>{
-
-                    }}
-                />
-
-                <MeCellItem
-                    title={'安全设置'}
-                    iconSource={require('../../Images/Me/wode_02.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <MeCellItem
-                    title={'车主认证'}
-                    iconSource={require('../../Images/Me/wode_03.png')}
-                    onClick={()=>{
-
+                        this.push('bindPhone', {
+                            title:'重新绑定手机号',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        }, null)
                     }}
                 />
                 <MeCellItem
-                    title={'消息设置'}
-                    iconSource={require('../../Images/Me/wode_04.png')}
+                    title={'修改密码'}
+                    iconSource={require('../../Images/Me/me_icon02.png')}
                     onClick={()=>{
 
-                    }}
-                />
-                <MeCellItem
-                    title={'帮助中心'}
-                    iconSource={require('../../Images/Me/wode_05.png')}
-                    onClick={()=>{
-
-                    }}
-                />
-                <MeCellItem
-                    title={'清理缓存'}
-                    iconSource={require('../../Images/Me/wode_06.png')}
-                    onClick={()=>{
+                        this.push('resetPwd', {
+                            title:'重置密码',
+                            showBackTitle: false,
+                            onBackPress:()=>{
+                                this.pop();
+                            }
+                        }, null)
 
                     }}
                 />
                 <MeCellItem
                     title={'关于iWork'}
-                    iconSource={require('../../Images/Me/wode_07.png')}
+                    iconSource={require('../../Images/Me/me_icon03.png')}
                     onClick={()=>{
                         this.push('aboutIWork', {
                             title:'关于iWork',
@@ -183,6 +170,14 @@ class OfilmMeTabScreen extends XAppBaseScreen {
                                 this.pop();
                             }
                         },null)
+                    }}
+                />
+
+                <MeCellItem
+                    title={'退出登录'}
+                    iconSource={require('../../Images/Me/me_icon04.png')}
+                    onClick={()=>{
+
                     }}
                 />
 
@@ -256,7 +251,7 @@ const styles = StyleSheet.create({
     //分割横线
     dividingLine: {
         backgroundColor: 'lightgray',
-        height: 1,
+        height: StyleSheet.hairlineWidth,
         width: 54 * a
     },
     headerDividingLine:{
@@ -266,7 +261,7 @@ const styles = StyleSheet.create({
     },
     cellItemIcon:{
         width: 4 * a,
-        height: 5 * a,
+        height: 4 * a,
         marginRight: 2 * a,
     },
     cellItemText:{
