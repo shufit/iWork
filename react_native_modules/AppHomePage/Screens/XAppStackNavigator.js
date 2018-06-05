@@ -20,6 +20,7 @@ import {
     BindPhoneScreen,
     ModifyBindBankCard,
     MyBankCardScreen,
+    UnbindPhoneScreen,
 } from 'AppLogin';
 
 import {
@@ -107,6 +108,9 @@ const RouteConfigs = {
     },
     bindPhone:{
         screen: BindPhoneScreen,
+    },
+    unBindPhone:{
+        screen: UnbindPhoneScreen,
     },
     modifyBindCard:{
         screen:ModifyBindBankCard,

@@ -137,13 +137,21 @@ class OfilmMeTabScreen extends XAppBaseScreen {
                     title={'重新绑定手机号码'}
                     iconSource={require('../../Images/Me/me_icon01.png')}
                     onClick={()=>{
-                        this.push('bindPhone', {
-                            title:'重新绑定手机号',
+                        // this.push('bindPhone', {
+                        //     title:'重新绑定手机号',
+                        //     showBackTitle: false,
+                        //     onBackPress:()=>{
+                        //         this.pop();
+                        //     }
+                        // }, null);
+
+                        this.push('unBindPhone', {
+                            title:'手机认证',
                             showBackTitle: false,
                             onBackPress:()=>{
                                 this.pop();
                             }
-                        }, null)
+                        }, null);
                     }}
                 />
                 <MeCellItem
