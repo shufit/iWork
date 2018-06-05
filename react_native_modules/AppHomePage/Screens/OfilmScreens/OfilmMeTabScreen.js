@@ -29,7 +29,9 @@ import {
 import {
     Loading,
     HUD,
-} from 'react-native-global-ui'
+} from 'react-native-global-ui';
+
+import {NavigationActions} from 'react-navigation';
 
 const {A, a} = Grid;
 
@@ -178,6 +180,16 @@ class OfilmMeTabScreen extends XAppBaseScreen {
                     iconSource={require('../../Images/Me/me_icon04.png')}
                     onClick={()=>{
 
+                        /*
+                        **  重置路由，将根页面设置成登录页面
+                         */
+                        const resetAction = NavigationActions.reset({
+                            index: 0,
+                            actions: [
+                                NavigationActions.navigate({routeName:'login', params:{}})
+                            ]
+                        });
+                        this.props.navigation.dispatch(resetAction);
                     }}
                 />
 
