@@ -200,7 +200,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
                     />
                     <Text style={styles.labelText}>{'所在地'}</Text>
                     <View style={styles.verticalLine}/>
-                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 16, marginLeft: 2 * a}}>{this.state.selectedArea}</Text>
+                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 14, marginLeft: 2 * a}}>{this.state.selectedArea}</Text>
                     <Image
                         style={styles.leftArrowIcon}
                         source={require('../Images/arrow_right.png')}
@@ -270,7 +270,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
                     />
                     <Text style={styles.labelText}>{'银    行'}</Text>
                     <View style={styles.verticalLine}/>
-                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 16, marginLeft: 2 * a}}>{this.state.selectedBankName}</Text>
+                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 14, marginLeft: 2 * a}}>{this.state.selectedBankName}</Text>
                     <Image
                         style={styles.leftArrowIcon}
                         source={require('../Images/arrow_right.png')}
