@@ -70,6 +70,7 @@
 		77A52334208490E100AB9BC9 /* XAppRNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A52333208490E100AB9BC9 /* XAppRNRootViewController.m */; };
 		77A523382084930900AB9BC9 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A523362084930900AB9BC9 /* NSString+URLEncode.m */; };
 		77A5233B20849F6900AB9BC9 /* NSDictionary+UrlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A5233920849F6900AB9BC9 /* NSDictionary+UrlEncoding.m */; };
+		77B7A76C20C7D5BD00AD617B /* libRCTBEEPickerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B7A74820C7C85600AD617B /* libRCTBEEPickerManager.a */; };
 		77C00A8B2080518200DFAAFE /* XAppModuleManager+ModuleJump.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C00A8A2080518200DFAAFE /* XAppModuleManager+ModuleJump.m */; };
 		77C00AB3208054E300DFAAFE /* XAppReactModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C00AB2208054E300DFAAFE /* XAppReactModuleManager.m */; };
 		77C00B802080BB6D00DFAAFE /* XAppBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C00B7F2080BB6D00DFAAFE /* XAppBaseViewController.m */; };
@@ -287,6 +288,13 @@
 			remoteGlobalIDString = F60690131CA2766F0003FB26;
 			remoteInfo = RealmReact;
 		};
+		77B7A74720C7C85600AD617B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B7A74020C7C85600AD617B /* RCTBEEPickerManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17D41E551D7EE0CA0031415E;
+			remoteInfo = RCTBEEPickerManager;
+		};
 		77EAB296205F88560084C79B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -461,6 +469,7 @@
 		77A523372084930900AB9BC9 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
 		77A5233920849F6900AB9BC9 /* NSDictionary+UrlEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+UrlEncoding.m"; sourceTree = "<group>"; };
 		77A5233A20849F6900AB9BC9 /* NSDictionary+UrlEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+UrlEncoding.h"; sourceTree = "<group>"; };
+		77B7A74020C7C85600AD617B /* RCTBEEPickerManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBEEPickerManager.xcodeproj; path = "../node_modules/react-native-picker/ios/RCTBEEPickerManager.xcodeproj"; sourceTree = "<group>"; };
 		77C00A892080518200DFAAFE /* XAppModuleManager+ModuleJump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XAppModuleManager+ModuleJump.h"; sourceTree = "<group>"; };
 		77C00A8A2080518200DFAAFE /* XAppModuleManager+ModuleJump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XAppModuleManager+ModuleJump.m"; sourceTree = "<group>"; };
 		77C00AB1208054E300DFAAFE /* XAppReactModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAppReactModuleManager.h; sourceTree = "<group>"; };
@@ -498,6 +507,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B7A76C20C7D5BD00AD617B /* libRCTBEEPickerManager.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -851,6 +861,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		77B7A74120C7C85600AD617B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77B7A74820C7C85600AD617B /* libRCTBEEPickerManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		77C00AB42080A97B00DFAAFE /* ModuleManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -938,6 +956,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				77B7A74020C7C85600AD617B /* RCTBEEPickerManager.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -1137,6 +1156,10 @@
 				{
 					ProductGroup = 5E91572E1DD0AC6500FF2AA8 /* Products */;
 					ProjectRef = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+				},
+				{
+					ProductGroup = 77B7A74120C7C85600AD617B /* Products */;
+					ProjectRef = 77B7A74020C7C85600AD617B /* RCTBEEPickerManager.xcodeproj */;
 				},
 				{
 					ProductGroup = ADBDB9201DFEBF0600ED6528 /* Products */;
@@ -1381,6 +1404,13 @@
 			fileType = archive.ar;
 			path = libRealmReact.a;
 			remoteRef = 776A570620B3BD96006A32C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		77B7A74820C7C85600AD617B /* libRCTBEEPickerManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBEEPickerManager.a;
+			remoteRef = 77B7A74720C7C85600AD617B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		77EAB297205F88560084C79B /* libjsinspector.a */ = {

@@ -8,6 +8,7 @@ import {
     View,
     Image,
     TouchableOpacity,
+    TouchableWithoutFeedback,
     ScrollView,
     ImageBackground,
     TextInput,
@@ -25,6 +26,9 @@ import {
     SmsCountDownButton,
 } from 'AppBase';
 import StepIndicator from "../../AppBase/Components/StepIndicator";
+import Picker from 'react-native-picker';
+
+import area from '../Configs/area';
 
 const {A, a} = Grid;
 
@@ -48,7 +52,10 @@ class ModifyBindBankCard extends XAppBaseScreen {
         super(props);
         this.state = {
             currentPosition:0,
+            selectedArea:'请选择开户行所在地',
+            selectedBankName:'请选择银行',
         };
+
     }
 
     render() {
@@ -183,49 +190,122 @@ class ModifyBindBankCard extends XAppBaseScreen {
     _renderAddress() {
 
         return (
-            <View style={styles.subInputContainer}>
-                <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_address.png')}
-                />
-                <Text style={styles.labelText}>{'所在地'}</Text>
-                <View style={styles.verticalLine}/>
-                <TextInput
-                    style={styles.inputText}
-                    placeholder={'请输入开户行所在地'}
-                    secureTextEntry={false}
-                    padding={0}
-                    underlineColorAndroid={'transparent'}
-                    onChangeText={(text)=>{
+            <TouchableWithoutFeedback onPress={()=>{
 
-                    }}
-                />
-            </View>
+                this._showAreaPicker();
+            }}>
+                <View style={styles.subInputContainer}>
+                    <Image style={styles.subIcon}
+                           source={require('../Images/bindcard_address.png')}
+                    />
+                    <Text style={styles.labelText}>{'所在地'}</Text>
+                    <View style={styles.verticalLine}/>
+                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 16, marginLeft: 2 * a}}>{this.state.selectedArea}</Text>
+                    <Image
+                        style={styles.leftArrowIcon}
+                        source={require('../Images/arrow_right.png')}
+                        resizeMode={'stretch'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
         );
 
+    }
+
+    _createAreaData() {
+        let data = [];
+        let len = area.length;
+        for(let i=0;i<len;i++){
+            let city = [];
+            for(let j=0,cityLen=area[i]['city'].length;j<cityLen;j++){
+                let _city = {};
+                _city[area[i]['city'][j]['name']] = area[i]['city'][j]['area'];
+                city.push(_city);
+            }
+
+            let _data = {};
+            _data[area[i]['name']] = city;
+            data.push(_data);
+        }
+        return data;
+    }
+
+    _showAreaPicker() {
+        Picker.init({
+            pickerData: this._createAreaData(),
+            selectedValue: ['江西', '南昌', '东湖区'],
+            onPickerConfirm: pickedValue => {
+                console.log('area', pickedValue);
+                this.setState({
+                    selectedArea:pickedValue,
+                });
+            },
+            onPickerCancel: pickedValue => {
+                console.log('area', pickedValue);
+            },
+            onPickerSelect: pickedValue => {
+                //Picker.select(['山东', '青岛', '黄岛区'])
+                console.log('area', pickedValue);
+            },
+            pickerConfirmBtnText:'确定',
+            pickerCancelBtnText:'取消',
+            pickerTitleText:'选择地区',
+
+
+        });
+        Picker.show();
     }
 
     _renderBankName() {
 
         return (
-            <View style={styles.subInputContainer}>
-                <Image style={styles.subIcon}
-                       source={require('../Images/bindcard_bank.png')}
-                />
-                <Text style={styles.labelText}>{'银    行'}</Text>
-                <View style={styles.verticalLine}/>
-                <TextInput
-                    style={styles.inputText}
-                    placeholder={'请输入银行'}
-                    secureTextEntry={false}
-                    padding={0}
-                    underlineColorAndroid={'transparent'}
-                    onChangeText={(text)=>{
+            <TouchableWithoutFeedback onPress={()=>{
 
-                    }}
-                />
-            </View>
+                this._showBankNamePicker();
+
+            }}>
+                <View style={styles.subInputContainer}>
+                    <Image style={styles.subIcon}
+                           source={require('../Images/bindcard_bank.png')}
+                    />
+                    <Text style={styles.labelText}>{'银    行'}</Text>
+                    <View style={styles.verticalLine}/>
+                    <Text style={{width: 30 * a, color:'rgba(0,0,0,0.2)', fontSize: 16, marginLeft: 2 * a}}>{this.state.selectedBankName}</Text>
+                    <Image
+                        style={styles.leftArrowIcon}
+                        source={require('../Images/arrow_right.png')}
+                        resizeMode={'stretch'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
         );
 
+    }
+
+    _showBankNamePicker() {
+        Picker.init({
+            pickerData: ['中国银行','中国工商银行','中国建设银行','中国农业银行'],
+            selectedValue: ['江西', '南昌', '东湖区'],
+            onPickerConfirm: pickedValue => {
+                console.log('area', pickedValue);
+                this.setState({
+                    selectedBankName:pickedValue,
+                });
+            },
+            onPickerCancel: pickedValue => {
+                console.log('area', pickedValue);
+            },
+            onPickerSelect: pickedValue => {
+                //Picker.select(['山东', '青岛', '黄岛区'])
+                console.log('area', pickedValue);
+            },
+            pickerConfirmBtnText:'确定',
+            pickerCancelBtnText:'取消',
+            pickerTitleText:'选择地区',
+
+
+        });
+        Picker.show();
     }
 
     _renderBankNo() {
@@ -546,6 +626,10 @@ const styles = StyleSheet.create({
     nextButtonText:{
         fontSize:20,
         color:'#fff',
+    },
+    leftArrowIcon:{
+        width: 4 * a,
+        height: 3.5* a,
     },
 });
 
