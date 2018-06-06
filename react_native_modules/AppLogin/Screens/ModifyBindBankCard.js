@@ -301,7 +301,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
             },
             pickerConfirmBtnText:'确定',
             pickerCancelBtnText:'取消',
-            pickerTitleText:'选择地区',
+            pickerTitleText:'选择银行',
 
 
         });
