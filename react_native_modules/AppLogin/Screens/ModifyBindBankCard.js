@@ -622,6 +622,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         marginLeft: 6 * a,
         marginRight: 3 * a,
+        marginBottom: 3 * a,
     },
     nextButtonText:{
         fontSize:20,
