@@ -77,7 +77,7 @@ class ModifyBindBankCard extends XAppBaseScreen {
             separatorStrokeWidth: 3,
             currentStepStrokeWidth: 5,
             separatorFinishedColor: '#fff600',
-            separatorUnFinishedColor: 'transparent',
+            separatorUnFinishedColor: '#fff',
             stepIndicatorFinishedColor: 'transparent',
             stepIndicatorUnFinishedColor: 'transparent',
             stepIndicatorCurrentColor: 'transparent',
@@ -101,12 +101,6 @@ class ModifyBindBankCard extends XAppBaseScreen {
                     currentPosition={this.state.currentPosition}
                     stepCount={3}
                     labels={['1.身份认证', '2.手机认证', '3.绑定银行卡']}
-                    onPress={(position)=>{
-                        this.setState({
-                            currentPosition:position,
-                        });
-                    }}
-
                     renderStepIndicator={({position, stepStatus})=>{
 
                         switch (stepStatus){

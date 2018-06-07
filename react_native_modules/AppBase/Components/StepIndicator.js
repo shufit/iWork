@@ -45,9 +45,15 @@ export default class StepIndicator extends PureComponent {
         };
 
         this.customStyles = Object.assign(defaultStyles, props.customStyles);
-        this.progressAnim = new Animated.Value(0)
+        // this.progressAnim = new Animated.Value(0)
         this.sizeAnim = new Animated.Value(this.customStyles.stepIndicatorSize);
-        this.borderRadiusAnim = new Animated.Value(this.customStyles.stepIndicatorSize/2);
+        this.borderRadiusAnim = new Animated.Value(this.customStyles.stepIndicatorSize/2)
+        this.progressAnims = [];
+        for (let i = 0; i< props.stepCount - 1; i ++) {
+            let anim = new Animated.Value(0);
+            this.progressAnims.push(anim);
+        }
+
     }
 
     stepPressed(position) {
@@ -75,71 +81,105 @@ export default class StepIndicator extends PureComponent {
     }
 
     renderProgressBarBackground = () => {
+        let progressBars = [];
         const { stepCount, direction } = this.props;
-        let progressBarBackgroundStyle;
-        if(direction === 'vertical') {
-            progressBarBackgroundStyle = {
-                backgroundColor:this.customStyles.separatorUnFinishedColor,
-                position:'absolute',
-                left:(this.state.width - this.customStyles.separatorStrokeWidth)/2,
-                top:this.state.height/(2*stepCount),
-                bottom:this.state.height/(2*stepCount),
-                width:this.customStyles.separatorStrokeWidth
+        for (let i = 0; i< stepCount - 1; i ++ ) {
+
+            let progressBarBackgroundStyle;
+            if(direction === 'vertical') {
+                progressBarBackgroundStyle = {
+                    backgroundColor:this.customStyles.separatorUnFinishedColor,
+                    position:'absolute',
+                    left:(this.state.width - this.customStyles.separatorStrokeWidth)/2,
+                    top:this.state.height/(2*stepCount),
+                    bottom:this.state.height/(2*stepCount),
+                    width:this.customStyles.separatorStrokeWidth
+                }
             }
-        }
-        else {
-            progressBarBackgroundStyle = {
-                backgroundColor:this.customStyles.separatorUnFinishedColor,
-                position:'absolute',
-                top:(this.state.height - this.customStyles.separatorStrokeWidth)/2,
-                left:this.state.width/(2*stepCount),
-                right:this.state.width/(2*stepCount),
-                height:this.customStyles.separatorStrokeWidth
+            else {
+                progressBarBackgroundStyle = {
+                    backgroundColor:this.customStyles.separatorUnFinishedColor,
+                    position:'absolute',
+                    top:(this.state.height - this.customStyles.separatorStrokeWidth)/2,
+                    left:(this.state.width/(2*stepCount))*(2 * i +1) + this.customStyles.stepIndicatorSize/2 ,
+                    right:(this.state.width/(2*stepCount))*(2 *(stepCount - 2 - i) + 1) + this.customStyles.stepIndicatorSize/2 ,
+                    height:this.customStyles.separatorStrokeWidth
+                }
             }
+
+            progressBars.push(
+
+                    <View
+                        style={progressBarBackgroundStyle}
+                        onLayout={(event) => {
+                            if(direction === 'vertical') {
+                                this.setState({progressBarSize: event.nativeEvent.layout.height} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
+                            }
+                            else {
+                                this.setState({progressBarSize: event.nativeEvent.layout.width} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
+                            }
+                        }}
+                    />
+            );
+
         }
-        return(
-            <View
-                onLayout={(event) => {
-                    if(direction === 'vertical') {
-                        this.setState({progressBarSize: event.nativeEvent.layout.height} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
-                    }
-                    else {
-                        this.setState({progressBarSize: event.nativeEvent.layout.width} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
-                    }
-                }}
-                style={progressBarBackgroundStyle}/>
-        )
+        return (
+            <View style={{flex:1, backgroundColor:'transparent'}}>
+                {progressBars}
+            </View>
+        );
+
+        // return (
+        //     <View
+        // onLayout={(event) => {
+        // if(direction === 'vertical') {
+        // this.setState({progressBarSize: event.nativeEvent.layout.height} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
+        // }
+        // else {
+        // this.setState({progressBarSize: event.nativeEvent.layout.width} , () => {this.onCurrentPositionChanged(this.props.currentPosition)})
+        // }
+        // }}
+        // style={progressBarBackgroundStyle}/>
+        // );
     }
 
     renderProgressBar = () => {
         const { stepCount, direction } = this.props;
-        let progressBarStyle;
-        if(direction === 'vertical') {
-            progressBarStyle = {
-                backgroundColor:this.customStyles.separatorFinishedColor,
-                position:'absolute',
-                left:(this.state.width - this.customStyles.separatorStrokeWidth)/2,
-                top:this.state.height/(2*stepCount),
-                bottom:this.state.height/(2*stepCount),
-                width:this.customStyles.separatorStrokeWidth,
-                height:this.progressAnim
+        let animatedViews = [];
+        for (let i = 0; i < stepCount - 1; i ++) {
+            let progressBarStyle;
+            if(direction === 'vertical') {
+                progressBarStyle = {
+                    backgroundColor:this.customStyles.separatorFinishedColor,
+                    position:'absolute',
+                    left:(this.state.width - this.customStyles.separatorStrokeWidth)/2,
+                    top:this.state.height/(2*stepCount),
+                    bottom:this.state.height/(2*stepCount),
+                    width:this.customStyles.separatorStrokeWidth,
+                    height:this.progressAnims[i]
+                }
             }
-        }
-        else {
-            progressBarStyle = {
-                backgroundColor:this.customStyles.separatorFinishedColor,
-                position:'absolute',
-                top:(this.state.height - this.customStyles.separatorStrokeWidth)/2,
-                left:this.state.width/(2*stepCount),
-                right:this.state.width/(2*stepCount),
-                height:this.customStyles.separatorStrokeWidth,
-                width:this.progressAnim
+            else {
+                progressBarStyle = {
+                    backgroundColor:this.customStyles.separatorFinishedColor,
+                    position:'absolute',
+                    top:(this.state.height - this.customStyles.separatorStrokeWidth)/2,
+                    left:(this.state.width/(2*stepCount))*(2 * i +1) + this.customStyles.stepIndicatorSize/2,
+                    right:(this.state.width/(2*stepCount))*(2 *(stepCount - 2 - i) + 1) + this.customStyles.stepIndicatorSize/2,
+                    height:this.customStyles.separatorStrokeWidth,
+                    width:this.progressAnims[i]
+                }
             }
+
+            animatedViews.push(<Animated.View
+                style={progressBarStyle}/>);
         }
-        return(
-            <Animated.View
-                style={progressBarStyle}/>
-        )
+
+        return animatedViews;
+        // return(
+        //     <Animated.View
+        //         style={progressBarStyle}/>
+        // )
     }
 
     renderStepIndicator = () => {
@@ -259,25 +299,26 @@ export default class StepIndicator extends PureComponent {
         if(position > stepCount-1) {
             position = stepCount-1;
         }
-        const animateToPosition = (this.state.progressBarSize/ (stepCount - 1)) * position;
+        // const animateToPosition = (this.state.progressBarSize/ (stepCount - 1)) * position;
+        const animateToPosition = this.state.progressBarSize * ((position - 1) >= 0 ? 1 : 0);
         this.sizeAnim.setValue(this.customStyles.stepIndicatorSize);
         this.borderRadiusAnim.setValue(this.customStyles.stepIndicatorSize/2);
-        Animated.sequence([
-            Animated.timing(
-                this.progressAnim,
-                {toValue: animateToPosition,duration:200}
-            ),
-            Animated.parallel([
+            Animated.sequence([
                 Animated.timing(
-                    this.sizeAnim,
-                    {toValue: this.customStyles.currentStepIndicatorSize, duration:100}
+                    this.progressAnims[position > 0 ? (position - 1) : 0],
+                    {toValue: animateToPosition,duration:200}
                 ),
-                Animated.timing(
-                    this.borderRadiusAnim,
-                    {toValue: this.customStyles.currentStepIndicatorSize/2, duration:100}
-                )
-            ])
-        ]).start();
+                Animated.parallel([
+                    Animated.timing(
+                        this.sizeAnim,
+                        {toValue: this.customStyles.currentStepIndicatorSize, duration:100}
+                    ),
+                    Animated.timing(
+                        this.borderRadiusAnim,
+                        {toValue: this.customStyles.currentStepIndicatorSize/2, duration:100}
+                    )
+                ])
+            ]).start();
     }
 
 }
